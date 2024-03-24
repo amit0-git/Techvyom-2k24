@@ -11,13 +11,19 @@ body {
     width: 100vw;
     position: relative;
     overflow: hidden;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
 #hometext {
-    width: 100%;
-    text-align: center;
+
+
     position: absolute;
     top: 50px;
 
@@ -31,18 +37,45 @@ body {
 
 }
 
+#desc {
+    width: 70%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 170px;
+    margin: 0 auto;
+    font-size: 20px;
+}
 
 #earth {
-    width: 100%;
+    /* width: 1500px; */
+    width: 700px;
     position: absolute;
-    bottom: -1000px;
+    bottom: 700px;
+
+    filter: drop-shadow(-10px -10px 70px rgba(62, 158, 247, 0.819));
+
+    transition: all 5s cubic-bezier(0.3, 0.4, 0.5, 1);
+    /* bottom: -1000px; */
+
+    animation: rotateEarth 70s linear infinite;
 
 
 
 }
 
 
+@keyframes rotateEarth {
+    from {
+        transform: rotate(0deg);
+        /* Start rotation from 0 degrees */
+    }
 
+    to {
+        transform: rotate(360deg);
+        /* Rotate to 360 degrees */
+    }
+}
 
 
 
@@ -180,17 +213,17 @@ body {
 
 /* -------------------------------srms trust    ----------------------------------------- */
 
-#srmstrust{
+#srmstrust {
     background-color: grey;
 }
 
 
-#trusthead{
+#trusthead {
     font-size: 60px;
     color: white;
 }
 
-#trustdesc{
+#trustdesc {
     font-size: 20px;
     color: white;
 }
@@ -203,17 +236,83 @@ body {
 /* --------------------------------tyro club ----------------------------------- */
 
 
-#tyroclub{
-    background-color: rgb(149, 114, 114);
+#tyroclub {
+    background-color: rgb(25, 25, 25);
 }
 
 
-#tyrohead{
+#tyrohead {
     font-size: 60px;
     color: white;
 }
 
-#tyrodesc{
+
+
+
+#tyrodesc {
     font-size: 20px;
     color: white;
+
+}
+
+.tyrophoto {
+    position: relative;
+    border: 1px solid white;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tyrocont {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.frame {
+    position: absolute;
+    z-index: 1;
+}
+
+.tyroimg {
+    height: 120px;
+
+    border-radius: 50%;
+    position: absolute;
+}
+
+.tyroname {
+    color: white;
+
+
+    font-size: 20px;
+}
+
+.tyrodesc {
+    color: white;
+
+
+    font-size: 15px;
+}
+
+#row1 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+#row2 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+#row3 {
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    justify-content: space-around;
 }

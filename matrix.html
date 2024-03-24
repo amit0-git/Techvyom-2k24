@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Character Loading Animation</title>
+
+</head>
+
+<body>
+
+  <style>
+    #loading-animation {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+    }
+  </style>
+
+
+
+  <div id="loading-animation"></div>
+
+  <script>
+      const loadingAnimation = document.getElementById('loading-animation');
+
+
+
+
+    function generateRandomChar() {
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+';
+      return characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+
+    // Function to update the loading animation
+    function updateLoadingAnimation(textDiv,length1) {
+    
+      textDiv.innerHTML = '';
+
+      // Generate random characters and append them to the loading animation
+   
+      for (let i = 0; i < length1; i++) {
+        textDiv.innerHTML += generateRandomChar();
+      }
+    }
+
+
+
+
+    function randomTextAnimation(text, textDiv) {
+
+      const interval = setInterval(() => {
+        updateLoadingAnimation(textDiv,text.length);
+      }, 60);
+
+      // Clear the interval after 3 seconds
+      setTimeout(() => {
+        clearInterval(interval);
+        //update the div
+
+        textDiv.innerHTML = text;
+        console.log("Animation stopped")
+      }, 1000);
+
+
+
+
+    }
+
+
+    randomTextAnimation("Events Name Loading",loadingAnimation )
+  </script>
+</body>
+
+</html>
