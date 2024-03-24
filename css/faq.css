@@ -1,7 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 #faq{
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 20px;
 }
 
 #faq h1{
     margin: 0;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+#faqcontainer{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 100vw;
+}
+#faqbox{
+    border: 1px solid rgb(7, 190, 251);
+    color: white;
+    width: 80%;
+
+    border-radius: 20px;
+    margin-bottom: 10px;
+    
+}
+
+#faqhead{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 8px;
+    justify-content: space-between;
+}
+#faqtext{
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+}
+.faqbutton{
+   
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+    
+}
+
+.faqdesc{
+    padding: 8px;
+    font-size: 15px;
+    display: none;
+    font-family: "Poppins", sans-serif;
+    
 }
