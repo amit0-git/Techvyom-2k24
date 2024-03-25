@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#eventscont{
+    background-color: black;
+    padding-bottom: 40px;
+}
+#eventscont h1{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#eventrow1{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin-bottom: 40px;
+}
+
+#iconwrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#eventicon{
+  position: relative;
+  height: 170px;
+ 
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#eventicon:hover #frameicon {
+    transform: rotate(45deg) scale(1.11); /* Rotate frameicon on hover */
+    
+}
+
+#eventicon1{
+    height: 60px;
+    position: absolute;
+    
+}
+#frameicon{
+        height: 170px;
+        position: absolute;
+        transition: all 0.3s ease; 
+}
+#eventnumber{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5px;
+}
+
+#eventname{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+}
+
+#eventText{
+    
+    color: white;
+    width: 70%;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid rgb(4, 144, 209);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
