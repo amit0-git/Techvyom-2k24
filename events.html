@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events</title>
+
+  <!-- fontawesome icon cdn -->
+  <script src="https://kit.fontawesome.com/04fd96b6f4.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/events.css">
   <link rel="stylesheet" href="css/navbar.css">
 </head>
@@ -12,40 +16,39 @@
 <body>
   <div id="eventsContainer">
 
-<!------------------------ Nav bar-------------------- -->
+    <!------------------------ Nav bar-------------------- -->
 
 
 
     <div id="mobilenavbar">
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</a></li>
+        <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Events</a></li>
+        <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Gallery</a></li>
+        <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</a></li>
+
+
+      </ul>
+    </div>
+
+
+    <div id="navbar" style="transform: translateX(-50%); left: 50%;">
+      <div id="navbar-left">
+        <img src="assets/SRMSIMS-logo.png" alt="" srcset="">
+      </div>
+      <div id="navbar-right">
         <ul>
-          <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</a></li>
-          <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Events</a></li>
-          <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Gallery</a></li>
-          <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</a></li>
-  
-  
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">Home</a></li>
+          <li id="navicon"><a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+              <i class="fa fa-bars"></i>
+            </a></li>
+
         </ul>
       </div>
-  
-  
-      <div id="navbar" style="transform: translateX(-50%); left: 50%;">
-        <div id="navbar-left">
-          <img src="assets/SRMSIMS-logo.png" alt="" srcset="">
-        </div>
-        <div id="navbar-right">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#">Home</a></li>
-            <li id="navicon"><a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                <i class="fa fa-bars"></i>
-              </a></li>
-  
-          </ul>
-        </div>
-      </div>
-
+    </div>
 
 
 
@@ -780,6 +783,8 @@
 
   <!-- JS Files -->
   <script src="js/event.js"></script>
+
+
 </body>
 
 </html>

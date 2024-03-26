@@ -26,6 +26,9 @@
     align-items: center;
     flex-direction: column;
 }
+#iconwrap:hover{
+    filter: drop-shadow(10px 10px 10px rgb(0, 183, 255) );
+}
 #eventicon{
   position: relative;
   height: 170px;
@@ -55,6 +58,7 @@
     color: white;
     font-family: "Poppins", sans-serif;
     margin-top: 5px;
+    font-size: 20px;
 }
 
 #eventname{
@@ -74,6 +78,8 @@
     padding: 30px;
     border-radius: 10px;
     margin: 0 auto;
+
+    box-shadow: inset 5px 5px 10px 10px rgb(128, 234, 218);
     
 }
 

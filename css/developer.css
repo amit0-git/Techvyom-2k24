@@ -1,8 +1,11 @@
 #developercont{
     background-color: rgb(53, 52, 52);
+    height: 100vh;
 }
 
-#developercont h1{
+#developerh1{
     margin: 0;
     color: white;
+    text-align: center;
+    font-size: 60px;
 }

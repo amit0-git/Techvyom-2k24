@@ -1,53 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /* gallery */
 
 
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
-#gallery h1{
+
+#galleryh1 {
     color: white;
+    font-size: 60px;
+
+
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-top: 90px;
     margin: 0;
+
+
+
 }
-#gallery{
-   
+
+#gallery {
+
     background-color: black;
+    position: relative;
+    width: 100vw;
 }
-#youtube{
+
+
+
+#youtube {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
+
 }
-#youtube iframe{
+
+#youtube iframe {
     margin: 20px;
     border: 2px solid orange;
     border-radius: 10px;
 }
-#photos{
-    margin-top: 20px;
+
+#photos {
+    /* margin-top: 20px; */
     display: grid;
-    grid-template-columns: repeat(4,auto);
-    justify-items: center; /* Align items horizontally in the center */
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    /* Align items horizontally in the center */
     align-items: center;
     row-gap: 10px;
     grid-auto-flow: row;
-    
+
 }
-#ph{
+
+#ph {
     border: 1px solid orange;
     height: 200px;
     width: 300px;
     border-radius: 10px;
-   
+
 
 }
-#ph:hover{
+
+#ph:hover {
     transform: scale(1.03);
     cursor: pointer;
 }
-#ph img{
+
+#ph img {
     height: 200px;
     width: 300px;
     object-fit: cover;
