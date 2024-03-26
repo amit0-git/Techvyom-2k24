@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Homepage */
 
@@ -10,7 +9,7 @@ body {
 }
 
 #homepage {
-    
+
     background-color: black;
     height: 100vh;
     width: 100vw;
@@ -28,8 +27,8 @@ body {
 
 #hometext {
 
-     font-family: "Poppins", sans-serif;
-    
+    font-family: "Poppins", sans-serif;
+
     position: absolute;
     top: 50px;
 
@@ -221,19 +220,180 @@ body {
 /* -------------------------------srms trust    ----------------------------------------- */
 
 #srmstrust {
-    background-color: grey;
+    background-color: rgb(99, 99, 99);
+    
 }
 
 
 #trusthead {
     font-size: 60px;
     color: white;
+    text-align: center;
+    padding-top: 30px;
 }
 
 #trustdesc {
+    width: 80%;
     font-size: 20px;
     color: white;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 20px;
+    
 }
+
+
+
+
+
+#chairmanCont {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+
+
+.landing-speaker-card {
+    width: 13.5rem;
+    height: 21rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.speaker-card-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #f0b537;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.speaker-shape {
+    /* -webkit-clip-path: polygon(0% 4%, 6% 0%, 97.5% 0%, 97.5% 10%, 100% 12%, 100% 88%, 85% 100%, 15% 100%, 0% 88%); */
+    clip-path: polygon(0% 4%, 6% 0%, 94% 0%, 100% 4%, 100% 12%, 100% 88%, 85% 100%, 15% 100%, 0% 88%);
+}
+
+.speaker-card {
+    --bg-color: #35261b;
+    background-color: var(--bg-color);
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.speaker-card-name {
+    color: var(--Color-Base-Gold-Yellow, #f0b537);
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.speaker-card-image-container {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0b537;
+}
+
+.speaker-shape-2 {
+    -webkit-clip-path: polygon(0% 3%, 41% 3%, 44% 0%, 56% 0%, 59% 3%, 100% 3%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 3%, 41% 3%, 44% 0%, 56% 0%, 59% 3%, 100% 3%, 100% 100%, 0% 100%);
+}
+
+.speaker-card-image {
+    width: 100%;
+    height: calc(100% - 4px);
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.speaker-card-position-container {
+    width: 90%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0b537;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    z-index: 2;
+}
+
+.speaker-shape-3 {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 87% 100%, 13% 100%, 0% 45%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 87% 100%, 13% 100%, 0% 45%);
+}
+
+.speaker-card-position {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    color: #fff;
+    text-align: center;
+    font-family: Bender;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+
+.speaker-card-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.speaker-card-position-top {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* trust faculty */
+#facultyh1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#facultycont {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    justify-content: space-around;
+    padding-bottom: 60px;
+    
+}
+
+#facultycont .landing-speaker-card {
+    width: 10.5rem;
+    height: 16rem;
+    
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
 
 
 
@@ -251,6 +411,9 @@ body {
 #tyrohead {
     font-size: 60px;
     color: white;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -259,6 +422,13 @@ body {
 #tyrodesc {
     font-size: 20px;
     color: white;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid rgb(131, 131, 255);
+    border-radius: 10px;
+    padding: 30px;
 
 }
 
@@ -286,7 +456,7 @@ body {
     transition: height 0.2s ease;
 }
 
-.frame:hover{
+.frame:hover {
     height: 210px;
 }
 
@@ -304,13 +474,10 @@ body {
     font-size: 20px;
 }
 
-.tyrodesc {
-    color: white;
-    font-family: "Poppins", sans-serif;
 
-    font-size: 15px;
+#tyromembers{
+    margin-top: 40px;
 }
-
 #row1 {
     display: flex;
     margin-top: 20px;
@@ -324,6 +491,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 #row3 {
     display: flex;
     margin-top: 20px;

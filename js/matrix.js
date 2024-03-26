@@ -47,12 +47,21 @@ function randomTextAnimation(text, textDiv) {
 
 const eventh1 = document.getElementById("eventh1");
 
+const tyroh1 = document.getElementById("tyrohead");
 
+const trusth1 = document.getElementById("trusthead");
 
 eventh1.addEventListener("mouseenter", () => {
     randomTextAnimation("Events", eventh1)
 });
 
+tyroh1.addEventListener("mouseenter", () => {
+    randomTextAnimation("TYRO CLUB", tyroh1)
+});
+
+trusth1.addEventListener("mouseenter", () => {
+    randomTextAnimation("ABOUT THE TRUST", trusth1)
+});
 
 
 
