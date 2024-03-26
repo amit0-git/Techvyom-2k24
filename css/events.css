@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#eventsContainer {
+    background-color: black;
+    padding-bottom: 20px;
+    position: relative;
+
+
+}
+
+#eventHH{
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+padding-top: 90px;
+}
+
+#equinox {
+    color: white;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    border: 1px solid rgb(75, 239, 248);
+
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#equinox-left-head {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 106, 255);
+    font-weight: bold;
+}
+
+#equinox-left {
+    padding: 20px;
+}
+
+#equinox-left-desc {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+#equinox-right {
+
+    /* clip-path: polygon(50% 0%, 100% 0, 61% 48%, 100% 99%, 100% 100%, 32% 100%, 0 100%, 0 47%, 0 0);  left*/
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 80%, 100% 100%, 32% 100%, 0 100%, 29% 48%, 0 0);
+    background-image: url(/assets/2555355.jpg);
+
+    background-size: cover;
+    height: 250px;
+}
+
+#equinoxevents {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#eventbox {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+
+    height: 260px;
+    width: 220px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    transition: all 1s ease;
+
+
+
+}
+
+#eventbox:hover {
+    background-image: url(/assets/shadow.svg);
+}
+
+#frameup {
+    max-width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+#framedown {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+#poster {
+    width: 190px;
+}
+
+#eventname {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}

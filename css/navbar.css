@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+#navbar {
+
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+
+    z-index: 3;
+
+
+
+    background: linear-gradient(#030a17, #030a17) padding-box, linear-gradient(to right, #bd73e2, #030a17, #030a17, #030a17, #6de7ef) border-box;
+}
+
+#navbar-left {
+    display: flex;
+
+    align-items: center;
+}
+
+#navbar-left img {
+    height: 40px;
+    margin-left: 10px;
+
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Rajdhani";
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+#navbar ul li:hover {
+    text-shadow: #00e0ff 1px 0 10px;
+}
+
+
+
+
+#navicon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    #navbar ul li:not(:last-child) {
+      display: none;
+    }
+
+    #navicon {
+      display: block;
+    }
+
+
+  }
+
+  #mobilenavbar {
+    background-color: rgb(107, 99, 99);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+  }
+
+  #mobilenavbar ul {
+    list-style-type: none;
+    margin-top: 80px;
+  }
+
+  #mobilenavbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  #mobilenavbar ul li:hover {
+    text-shadow: #00e0ff 1px 0 10px;
+    background-color: palegreen;
+  }
+

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 /* Homepage */
 
 
@@ -25,12 +27,14 @@ body {
 
 
 
+
+
 #hometext {
 
     font-family: "Poppins", sans-serif;
 
     position: absolute;
-    top: 50px;
+    top: 60px;
 
     font-size: 100px;
     margin: 0;
@@ -221,7 +225,7 @@ body {
 
 #srmstrust {
     background-color: rgb(99, 99, 99);
-    
+
 }
 
 
@@ -239,7 +243,7 @@ body {
     text-align: left;
     margin: 0 auto;
     padding-top: 20px;
-    
+
 }
 
 
@@ -370,30 +374,31 @@ body {
 
 
 /* trust faculty */
-#facultyh1{
+#facultyh1 {
     color: white;
     text-align: center;
     font-size: 40px;
     margin-top: 50px;
     margin-bottom: 40px;
 }
+
 #facultycont {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(6,auto);
+    grid-template-columns: repeat(6, auto);
     justify-content: space-around;
     padding-bottom: 60px;
-    
+
 }
 
 #facultycont .landing-speaker-card {
     width: 10.5rem;
     height: 16rem;
-    
+
     margin-left: 0;
     margin-right: 0;
-    
-  }
+
+}
 
 
 
@@ -441,6 +446,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+.tyrodesc {
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+}
 
 .tyrocont {
     border: 1px solid red;
@@ -475,9 +486,10 @@ body {
 }
 
 
-#tyromembers{
+#tyromembers {
     margin-top: 40px;
 }
+
 #row1 {
     display: flex;
     margin-top: 20px;
