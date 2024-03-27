@@ -11,6 +11,8 @@
 body {
     margin: 0;
     padding: 0;
+
+    
 }
 
 #homepage {
@@ -51,7 +53,7 @@ body {
 
 #desc {
 
-    font-family: "Poppins", sans-serif;
+    font-family: "P oppins", sans-serif;
     width: 70%;
     text-align: center;
     color: white;
@@ -126,7 +128,9 @@ body {
 
 
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
 }
 
 .navItm {
@@ -194,6 +198,7 @@ body {
     width: 500px;
     display: grid;
     grid-template-columns: repeat(3, auto);
+
 
 
 }
@@ -294,6 +299,10 @@ body {
 
 #srmstrust {
     background-color: rgb(99, 99, 99);
+    width: 100vw;
+    overflow: hidden;
+   
+
 
 }
 
@@ -335,7 +344,7 @@ body {
 
 #chairmanCont {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, max-content);
     justify-content: space-around;
     margin-top: 30px;
 }
@@ -344,10 +353,10 @@ body {
 
 
 .landing-speaker-card {
-    width: 13.5rem;
-    height: 21rem;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    width: 220px;
+    height: 350px;
+    /* margin-left: 3vw;
+    margin-right: 3vw; */
 }
 
 .landing-speaker-card:hover .speaker-card-img {
@@ -487,21 +496,146 @@ body {
 #facultycont {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(6, max-content);
     justify-content: space-around;
     padding-bottom: 60px;
 
 }
 
 #facultycont .landing-speaker-card {
-    width: 10.5rem;
-    height: 16rem;
+    width: 180px;
+    height: 290px;
 
     margin-left: 0;
     margin-right: 0;
 
 }
 
+#trusthead,#trustdesc{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+
+#leftcard1,#leftcard2{
+    visibility: hidden; 
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+#leftcard3,#leftcard4,#leftcard5{
+    visibility: hidden; 
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+#leftcard1.fade-left{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 400ms;
+}
+#leftcard2.fade-left{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#leftcard3.fade-left{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 700ms;
+}
+
+#leftcard4.fade-left{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 500ms;
+}
+
+#leftcard5.fade-left{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 300ms;
+}
+
+
+
+#rightcard1,#rightcard2{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+#rightcard3,#rightcard4,#rightcard5{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+
+#rightcard1.fade-right{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    
+}
+#rightcard2.fade-right{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 400ms;
+}
+#rightcard3.fade-right{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 300ms;
+}
+#rightcard4.fade-right{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 500ms;
+}
+
+#rightcard5.fade-right{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 700ms;
+}
+
+
+#trusthead.fade-in{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+#trustdesc.fade-in{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 100ms;
+}
+
+#facultyh1{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+
+#facultyh1.fade-in{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    
+}
 
 
 
@@ -512,6 +646,7 @@ body {
 
 #tyroclub {
     background-color: rgb(25, 25, 25);
+    width: 100vw;
 }
 
 

@@ -7,7 +7,7 @@
     src: url('/font/good-times/goodtimesrg.otf') format('opentype');
   }
 
-  
+
 #eventscont{
     background-color: black;
     padding-bottom: 40px;
@@ -26,8 +26,9 @@
 
 #eventrow1{
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4,max-content);
     margin-bottom: 40px;
+    justify-content: space-around
 }
 
 #iconwrap{
@@ -116,5 +117,5 @@
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
-    transition-delay: 300ms;
+   
 }

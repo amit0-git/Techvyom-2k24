@@ -7,7 +7,9 @@
     background-color: #1e1315;
     display: grid;
     grid-template-columns: 2fr 8fr;
-    padding: 20px;
+    
+    width: 100vw;
+    overflow: hidden;
 }
 
 

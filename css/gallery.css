@@ -50,11 +50,13 @@ body {
 #photos {
     /* margin-top: 20px; */
     display: grid;
+    margin: 0 auto;
+    width: 90%;
     grid-template-columns: repeat(4, auto);
     justify-items: center;
     /* Align items horizontally in the center */
     align-items: center;
-    row-gap: 10px;
+    row-gap: 20px;
     grid-auto-flow: row;
 
 }
