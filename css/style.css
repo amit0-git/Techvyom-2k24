@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 /* Homepage */
 
-
+@font-face {
+    font-family: 'myfont';
+    src: url('/font/good-times/goodtimesrg.otf') format('opentype');
+}
 
 body {
     margin: 0;
@@ -31,7 +34,7 @@ body {
 
 #hometext {
 
-    font-family: "Poppins", sans-serif;
+
 
     position: absolute;
     top: 60px;
@@ -47,6 +50,7 @@ body {
 }
 
 #desc {
+
     font-family: "Poppins", sans-serif;
     width: 70%;
     text-align: center;
@@ -91,27 +95,38 @@ body {
 
 
 
-/* Navigation */
 
+
+
+/* Navigation section */
+
+#navigationh1 {
+    font-size: 50px;
+    text-align: center;
+    color:  #a6d3fd;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'myfont';
+    font-weight: 400;
+
+}
 
 #navigation-wrap {
     height: 100vh;
     width: 100vw;
-    background-color: azure;
+    background-color: rgb(62, 62, 62);
 }
 
 
-#navigation-wrap h1 {
-    text-align: center;
-    margin: 0;
-}
+
 
 #navigation {
 
 
 
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
 }
 
 .navItm {
@@ -147,18 +162,29 @@ body {
 #navItm-name {
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .nav-top {
-    top: 0px;
+    top: -10px;
     position: absolute;
+    font-family: "Poppins", sans-serif;
 
 }
 
 .nav-bottom {
-    bottom: 0px;
+    bottom: -10px;
     position: absolute;
+    font-family: "Poppins", sans-serif;
 
+}
+
+#navwrapouter {
+    border: 2px solid red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navWrap {
@@ -168,6 +194,18 @@ body {
     width: 500px;
     display: grid;
     grid-template-columns: repeat(3, auto);
+
+
+}
+
+#roundborderbig {
+    position: absolute;
+    height: 100%;
+}
+
+#roundbordersmall {
+    position: absolute;
+    height: 200px;
 }
 
 #nav-left,
@@ -182,35 +220,66 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid white;
+
 
 }
 
 
 #right-nav {
     display: flex;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+#navigateh2 {
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+#right-nav-wrap {
+    /* border: 1px solid white; */
 }
 
 #nav-content {
-    width: 150px;
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    line-height: 55px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#left-nav-arrow i,
+#right-nav-arrow i {
     font-size: 40px;
+    color: white;
 }
 
-#left-nav-arrow img,
-#right-nav-arrow img {
-    height: 50px;
+#left-nav-arrow,
+#right-nav-arrow {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: rgba(240, 236, 236, 0.847) 0px 3px 8px;
 }
 
-#left-nav-arrow img:hover {
+/* #left-nav-arrow i:hover {
     height: 52px;
 }
 
 #right-nav-arrow img:hover {
     height: 52px;
-}
+} */
 
 #nav-right-button {
+    margin-top: 30px;
     background-color: rgb(153, 153, 199);
-    padding: 10px;
+    padding: 6px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid white;
 }
 
 #nav-right-button:hover {
@@ -230,10 +299,14 @@ body {
 
 
 #trusthead {
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-family: 'myfont';
+    font-weight: 400;
 }
 
 #trustdesc {
@@ -248,7 +321,7 @@ body {
     border-radius: 10px;
     padding: 30px;
 
-    
+
 
 
     box-shadow: inset 5px 5px 10px 10px rgb(239, 209, 12);
@@ -276,17 +349,22 @@ body {
     margin-left: 3vw;
     margin-right: 3vw;
 }
-.landing-speaker-card:hover .speaker-card-img{
+
+.landing-speaker-card:hover .speaker-card-img {
     transform: scale(1.2);
-} 
-.landing-speaker-card:hover{
+}
+
+.landing-speaker-card:hover {
     filter: drop-shadow(10px 10px 20px#f0b537);
-    
+
 }
-.landing-speaker-card:hover .speaker-card ,.landing-speaker-card:hover .speaker-card-position{
+
+.landing-speaker-card:hover .speaker-card,
+.landing-speaker-card:hover .speaker-card-position {
     background-color: var(--bg-color1);
-    
+
 }
+
 .speaker-card-container {
     width: 100%;
     height: 100%;
@@ -402,6 +480,8 @@ body {
     font-size: 40px;
     margin-top: 50px;
     margin-bottom: 40px;
+    font-family: 'myfont';
+    font-weight: 400;
 }
 
 #facultycont {
@@ -436,11 +516,13 @@ body {
 
 
 #tyrohead {
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     text-align: center;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'myfont';
+    font-weight: 400;
 }
 
 
@@ -470,6 +552,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .tyrodesc {
     color: white;
     font-family: "Poppins", sans-serif;
@@ -484,7 +567,8 @@ body {
     align-items: center;
     width: 200px;
 }
-.tyrocont:hover{
+
+.tyrocont:hover {
     filter: drop-shadow(10px 10px 10px rgb(5, 183, 248));
 }
 

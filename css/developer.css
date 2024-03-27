@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('/font/good-times/goodtimesrg.otf') format('opentype');
+  }
+
 #developercont{
     background-color: rgb(53, 52, 52);
     height: 100vh;
@@ -7,5 +12,8 @@
     margin: 0;
     color: white;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
+    font-family: 'myfont';
+    font-weight: 400;
+    padding-top: 30px;
 }
