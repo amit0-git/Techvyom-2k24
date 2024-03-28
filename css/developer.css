@@ -1,104 +1,169 @@
 @font-face {
-    font-family: 'myfont';
-    src: url('/font/good-times/goodtimesrg.otf') format('opentype');
-  }
+  font-family: 'myfont';
+  src: url('/font/good-times/goodtimesrg.otf') format('opentype');
+}
 
-#developercont{
+#developercont {
 
-  
+
 
   position: relative;
-    /* background-color: rgb(53, 52, 52); */
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* background-color: rgb(53, 52, 52); */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#developerh1{
-    margin: 0;
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'myfont';
-    font-weight: 400;
-    padding-top: 30px;
+#developerh1 {
+  margin: 0;
+  color: #a6d3fd;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'myfont';
+  font-weight: 400;
+  padding-top: 30px;
 }
 
+#developerh1 {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 1s, opacity 1s;
+}
 
+#developerh1.fade-in {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+
+}
+
+#developercardwrap {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 1s, opacity 1s;
+}
+
+#developercardwrap.fade-in {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 300ms;
+
+}
 
 
 #lightning {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 250px;
-    width: 200px;
-    z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 250px;
+  width: 200px;
+  z-index: 1;
 
 
 
- 
-  }
 
-  #developercardwrap{
-    margin-top: 30px;
+}
+
+#developercardwrap {
+  margin-top: 30px;
+}
+
+#developercard {
+
+  /* height: 370px;  */
+  width: 280px;
+  border: 3px solid;
+  border-image: linear-gradient(to bottom, rgb(74, 213, 252), rgb(247, 211, 11)) 3;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+
+  background-image: url(/assets/Animation\ -\ 1711599258435.gif);
+  background-size: 100%;
+
+}
+
+#amit {
+  position: absolute;
+  left: 10px;
+
+  top: 8px;
+  height: 230px;
+  width: 180px;
+  object-fit: cover;
+
+
+}
+
+#imgwrap {
+  position: relative;
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 250px;
+  margin-top: 20px;
+}
+
+#devname {
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#devphone {
+  color: white;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+#devemail {
+  color: white;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+/* ----------responsive css for developer----------------- */
+
+
+
+/* ----------setting media query for mobile--------------- */
+@media only screen and (max-width: 600px) {
+
+
+  #developerh1 {
+
+    font-size: 40px;
+
   }
 
   #developercard {
 
-     /* height: 370px;  */
-    width: 280px;
-    border: 3px solid; 
-    border-image: linear-gradient(to bottom, rgb(74, 213, 252), rgb(247, 211, 11)) 3; 
-    display: flex;
-
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-
-    background-image: url(/assets/Animation\ -\ 1711599258435.gif);
-    background-size: 100%;
-
-  }
-
-  #amit {
-    position: absolute;
-    left: 10px;
-
-    top: 8px;
-    height: 230px;
-    width: 180px;
-    object-fit: cover;
+    /* height: 370px;  */
+    width: 260px;
 
 
   }
 
-  #imgwrap {
-    position: relative;
-    /* border: 1px solid red; */
-    width: 200px;
-    height: 250px;
-    margin-top: 20px;
-  }
-
-  #devname {
-    color: white;
-    font-size: 30px;
-    margin-top: 10px;
-    font-family: "Poppins", sans-serif;
-  }
-
-  #devphone {
-    color: white;
-    margin-top: 10px;
-    font-family: "Poppins", sans-serif;
-  }
+  
+#devname {
+  
+  font-size: 25px;
  
+}
 
-  #devemail {
-    color: white;
-    padding-bottom: 10px;
-    font-family: "Poppins", sans-serif;
-  }
+
+
+}

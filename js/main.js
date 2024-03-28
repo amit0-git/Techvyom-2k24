@@ -1,9 +1,9 @@
 window.addEventListener('load', () => {
   const earth = document.querySelector('#earth');
   // Set the final position of the Earth
-  earth.style.width = "1500px"
+  // earth.style.width = "1500px"
   earth.style.animationDuration = "70s"
-  earth.style.bottom = '-1000px'; // Adjust according to the size of the image
+  // earth.style.bottom = '-1000px'; // Adjust according to the size of the image
 });
 
 
@@ -46,6 +46,20 @@ const rightcard5 = document.getElementById("rightcard5")
 
 const facultyhead1 = document.getElementById("facultyh1")
 
+const devh1 = document.getElementById("developerh1")
+
+const navigationh11 = document.getElementById("navigationh1")
+const navigationsection = document.getElementById("navigation")
+
+
+
+// tyro
+
+const tyrohead1 = document.getElementById("tyrohead")
+const tyrodesc1 = document.getElementById("tyrodesc")
+//developercardwrap
+const developercont = document.getElementById("developercardwrap")
+
 
 var observer = new IntersectionObserver(callback, options);
 function callback(entries) {
@@ -79,6 +93,28 @@ function callback(entries) {
         entry.target.classList.add("fade-in")
       }
 
+      if (entry.target.id == "developerh1") {
+        entry.target.classList.add("fade-in")
+      }
+
+      if (entry.target.id == "developercardwrap") {
+        entry.target.classList.add("fade-in")
+      }
+
+      if (entry.target.id == "navigationh1") {
+        entry.target.classList.add("fade-in")
+      }
+      if (entry.target.id == "navigation") {
+        entry.target.classList.add("fade-in")
+      }
+
+      if (entry.target.id == "tyrohead") {
+        entry.target.classList.add("fade-in")
+      }
+      if (entry.target.id == "tyrodesc") {
+        entry.target.classList.add("fade-in")
+      }
+
 
 
       observer.unobserve(entry.target);
@@ -106,4 +142,10 @@ observer.observe(rightcard4);
 observer.observe(rightcard5);
 
 observer.observe(facultyhead1);
+observer.observe(devh1);
+observer.observe(developercont);
+observer.observe(navigationh11);
+observer.observe(navigationsection);
 
+observer.observe(tyrohead1);
+observer.observe(tyrodesc1);

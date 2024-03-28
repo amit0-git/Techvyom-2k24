@@ -11,17 +11,19 @@
 body {
     margin: 0;
     padding: 0;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 
-    
+
 }
+
 #homepage {
 
-   /* background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%); */
-   
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%); */
+
     height: 100vh;
     width: 100vw;
     position: relative;
+
     overflow: hidden;
 
 
@@ -29,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  
+
 }
 
 
@@ -64,11 +66,21 @@ body {
     font-size: 20px;
 }
 
-#earth {
-    /* width: 1500px; */
-    width: 700px;
+#date {
+    color: yellow;
     position: absolute;
-    bottom: 700px;
+    top: 250px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+#earth {
+    width: 1500px;
+    
+    /* width: 700px; */
+    position: absolute;
+    /* in the js code */
+    bottom: -1000px;
 
     filter: drop-shadow(-10px -10px 70px rgba(62, 158, 247, 0.819));
 
@@ -76,7 +88,7 @@ body {
     /* bottom: -1000px; */
 
     animation: rotateEarth 70s linear infinite;
-    z-index: 10;
+    z-index: 5;
 
 
 
@@ -104,10 +116,13 @@ body {
 
 /* Navigation section */
 
+
+
+
 #navigationh1 {
     font-size: 50px;
     text-align: center;
-    color:  #a6d3fd;
+    color: #a6d3fd;
     margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -116,10 +131,25 @@ body {
 
 }
 
+#navigationh1 {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+
+#navigationh1.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    
+}
+
 #navigation-wrap {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: relative;
+    border: 1px solid white;
     /* background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%); */
 }
 
@@ -133,30 +163,58 @@ body {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    align-items: center;
+    grid-column-gap: 70px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+#navigation {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+
+#navigation.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 100ms;
+    
 }
 
 .navItm {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
-
-
     position: relative;
 
+}
+
+#sunicon{
+    animation: rotateSun 10s linear infinite;
+}
+
+@keyframes rotateSun {
+    from {
+        transform: rotate(0deg);
+        /* Start rotation from 0 degrees */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Rotate to 360 degrees */
+    }
 }
 
 .navItm img {
     height: 100px;
     width: 100px;
     margin: 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     transition: all .2s ease;
 
 
@@ -187,7 +245,7 @@ body {
 }
 
 #navwrapouter {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -196,7 +254,7 @@ body {
 
 #navWrap {
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 500px;
     width: 500px;
     display: grid;
@@ -228,7 +286,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px; */
 
 
 }
@@ -271,6 +331,7 @@ body {
     border-radius: 50%;
     padding: 10px;
     box-shadow: rgba(240, 236, 236, 0.847) 0px 3px 8px;
+    background-color: rgb(90, 90, 248);
 }
 
 /* #left-nav-arrow i:hover {
@@ -283,11 +344,13 @@ body {
 
 #nav-right-button {
     margin-top: 30px;
-    background-color: rgb(153, 153, 199);
+    background-color: rgb(90, 90, 248);
     padding: 6px;
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     border: 2px solid white;
+    color: white;
+    border-radius: 5px;
 }
 
 #nav-right-button:hover {
@@ -304,8 +367,8 @@ body {
     /* background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%); */
     width: 100vw;
     position: relative;
-  
-   
+
+
 
 
 }
@@ -313,7 +376,7 @@ body {
 
 #trusthead {
     font-size: 50px;
-    color: white;
+    color: #a6d3fd;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -333,10 +396,6 @@ body {
     border: 1px solid rgb(239, 209, 12);
     border-radius: 10px;
     padding: 30px;
-
-
-
-
     box-shadow: inset 5px 1px 5px 1px rgb(239, 209, 12);
 
 
@@ -488,7 +547,7 @@ body {
 
 /* trust faculty */
 #facultyh1 {
-    color: white;
+    color: #a6d3fd;
     text-align: center;
     font-size: 40px;
     margin-top: 50px;
@@ -515,52 +574,59 @@ body {
 
 }
 
-#trusthead,#trustdesc{
+#trusthead,
+#trustdesc {
     visibility: hidden;
     opacity: 0;
     transform: translateY(100px);
     transition: transform 1s, opacity 1s;
 }
 
-#leftcard1,#leftcard2{
-    visibility: hidden; 
+#leftcard1,
+#leftcard2 {
+    visibility: hidden;
     opacity: 0;
     transform: translateY(100px);
     transition: transform 1s, opacity 1s;
 }
-#leftcard3,#leftcard4,#leftcard5{
-    visibility: hidden; 
+
+#leftcard3,
+#leftcard4,
+#leftcard5 {
+    visibility: hidden;
     opacity: 0;
     transform: translateY(100px);
     transition: transform 1s, opacity 1s;
 }
-#leftcard1.fade-left{
+
+#leftcard1.fade-left {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 400ms;
 }
-#leftcard2.fade-left{
+
+#leftcard2.fade-left {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
 }
 
-#leftcard3.fade-left{
+#leftcard3.fade-left {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 700ms;
 }
 
-#leftcard4.fade-left{
+#leftcard4.fade-left {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 500ms;
 }
 
-#leftcard5.fade-left{
+#leftcard5.fade-left {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
@@ -569,45 +635,52 @@ body {
 
 
 
-#rightcard1,#rightcard2{
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: transform 1s, opacity 1s;
-}
-#rightcard3,#rightcard4,#rightcard5{
+#rightcard1,
+#rightcard2 {
     visibility: hidden;
     opacity: 0;
     transform: translateY(100px);
     transition: transform 1s, opacity 1s;
 }
 
-#rightcard1.fade-right{
+#rightcard3,
+#rightcard4,
+#rightcard5 {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+
+#rightcard1.fade-right {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
-    
+
 }
-#rightcard2.fade-right{
+
+#rightcard2.fade-right {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 400ms;
 }
-#rightcard3.fade-right{
+
+#rightcard3.fade-right {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 300ms;
 }
-#rightcard4.fade-right{
+
+#rightcard4.fade-right {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 500ms;
 }
 
-#rightcard5.fade-right{
+#rightcard5.fade-right {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
@@ -615,30 +688,31 @@ body {
 }
 
 
-#trusthead.fade-in{
+#trusthead.fade-in {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
 }
-#trustdesc.fade-in{
+
+#trustdesc.fade-in {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 100ms;
 }
 
-#facultyh1{
+#facultyh1 {
     visibility: hidden;
     opacity: 0;
     transform: translateY(100px);
     transition: transform 1s, opacity 1s;
 }
 
-#facultyh1.fade-in{
+#facultyh1.fade-in {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
-    
+
 }
 
 
@@ -652,12 +726,13 @@ body {
     /* background-color: rgb(25, 25, 25); */
     width: 100vw;
     position: relative;
+   
 }
 
 
 #tyrohead {
     font-size: 50px;
-    color: white;
+    color: #a6d3fd;
     text-align: center;
     padding-top: 30px;
     margin-bottom: 30px;
@@ -665,6 +740,20 @@ body {
     font-weight: 400;
 }
 
+#tyrohead {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+
+#tyrohead.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    
+    
+}
 
 
 
@@ -682,7 +771,20 @@ body {
     box-shadow: inset 5px 1px 5px 1px rgb(131, 131, 255);
 
 }
+#tyrodesc {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
 
+#tyrodesc.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 100ms;
+    
+}
 .tyrophoto {
     position: relative;
     border: 1px solid white;
@@ -742,23 +844,24 @@ body {
 }
 
 #row1 {
-    display: flex;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,max-content);
+    margin-top: 40px;
     justify-content: space-around;
-    flex-wrap: wrap;
+    
 }
 
 #row2 {
-    display: flex;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,max-content);
+    margin-top: 40px;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 #row3 {
-    display: flex;
-    margin-top: 20px;
-    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(6,max-content);
+    margin-top: 40px;
     justify-content: space-around;
-    flex-wrap: wrap;
+    padding-bottom: 40px;
 }

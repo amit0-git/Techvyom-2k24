@@ -82,7 +82,7 @@
   background-color: rgb(107, 99, 99);
   height: 100vh;
   width: 100vw;
-  z-index: 3;
+  z-index: 5;
   display: none;
 }
 
@@ -90,6 +90,7 @@
   list-style-type: none;
   padding-top: 80px;
   margin-top: 0;
+  z-index: 5;
 }
 
 #mobilenavbar ul li a {
@@ -100,6 +101,7 @@
   display: block;
   margin-top: 20px;
   padding: 10px;
+  z-index: 5;
 }
 
 #mobilenavbar ul li:hover {

@@ -2,35 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-#footer{
-  
-    /* background-color: #1e1315; */
+#footer {
+
+    background-color: #1e1315;
     display: grid;
     grid-template-columns: 2fr 8fr;
-    
+
     width: 100vw;
-    overflow: hidden;
-    
+
+
 }
 
 
-#footer-srms{
+#footer-srms {
     height: 60px;
 }
 
-#footer-left{
+#footer-left {
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-#footer-left-down-head{
-    color:white;
+
+#footer-left-down-head {
+    color: white;
     font-family: "Poppins", sans-serif;
     font-size: 25px;
     margin-top: 10px;
-    
+
 }
-#footer-right{
+
+#footer-right {
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
@@ -41,53 +43,123 @@
 
 
 
-#footer-right-head{
+#footer-right-head {
     color: red;
     font-size: 30px;
     font-weight: bold;
 }
 
-#footer-right-address{
+#footer-right-address {
     font-size: 18px;
     margin-top: 10px;
 }
-#footer-right-phone{
+
+#footer-right-phone {
     font-size: 18px;
     margin-top: 7px;
 }
 
-#footer-right-email{
+#footer-right-email {
     font-size: 18px;
     margin-top: 7px;
     color: white;
 }
 
-#footer-left-down-icons{
+#footer-left-down-icons {
     display: flex;
     margin-top: 10px;
-    
+
 }
 
-#footer-left-down-icons a i{
+#footer-left-down-icons a i {
     font-size: 25px;
 }
-#footer-left-down-icons a{
+
+#footer-left-down-icons a {
     margin-right: 10px;
 }
 
-#footer-right-email a{
+#footer-right-email a {
     text-decoration: none;
 }
-#footer-right-email a:active{
+
+#footer-right-email a:active {
     color: rgb(226, 226, 233);
 }
 
-#footer-right-email a:visited{
+#footer-right-email a:visited {
     color: white
 }
-#footer-right-email a:link{
+
+#footer-right-email a:link {
     color: white
 }
-#footer-right-email a:hover{
+
+#footer-right-email a:hover {
     color: rgb(93, 90, 90)
+}
+
+
+
+
+
+/* -------------responsive footer for mobile -------------- */
+/* ----------setting media query for mobile--------------- */
+@media only screen and (max-width: 600px) {
+
+    #footer {
+
+        background-color: #1e1315;
+        display: grid;
+        grid-template-columns: auto;
+
+        width: 100vw;
+
+
+    }
+
+    #footer-right-head {
+        color: red;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #footer-right-address {
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+
+    #footer-right-phone {
+        font-size: 15px;
+        margin-top: 7px;
+        text-align: center;
+    }
+
+    #footer-right-email {
+        font-size: 15px;
+        margin-top: 7px;
+        color: white;
+        text-align: center;
+    }
+
+    #footer-left {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-left-down-head {
+        color: rgb(255, 255, 255);
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+
 }

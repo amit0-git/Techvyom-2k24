@@ -50,15 +50,19 @@ const eventh1 = document.getElementById("eventh1");
 const tyroh1 = document.getElementById("tyrohead");
 
 const trusth1 = document.getElementById("trusthead");
+//navigationh1
+
+const navigationh1 = document.getElementById("navigationh1");
 
 
+const developerh1 = document.getElementById("developerh1");
 
 
 
 
 
 eventh1.addEventListener("mouseenter", () => {
-    randomTextAnimation("Events", eventh1)
+    randomTextAnimation("EVENTS", eventh1)
 });
 
 tyroh1.addEventListener("mouseenter", () => {
@@ -69,8 +73,13 @@ trusth1.addEventListener("mouseenter", () => {
     randomTextAnimation("ABOUT THE TRUST", trusth1)
 });
 
+navigationh1.addEventListener("mouseenter", () => {
+    randomTextAnimation("NAVIGATION", navigationh1)
+});
 
-
+developerh1.addEventListener("mouseenter", () => {
+    randomTextAnimation("DESIGN & DEVELOPMENT TEAM", developerh1)
+});
 
 
 

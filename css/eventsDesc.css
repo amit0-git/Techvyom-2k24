@@ -16,7 +16,7 @@
 }
 #eventh1{
     margin: 0;
-    color: white;
+    color: #a6d3fd;
     text-align: center;
     font-size: 50px;
     padding-top: 20px;
@@ -119,4 +119,39 @@
     opacity: 1;
     transform: translateY(0px);
    
+}
+
+
+
+/*   ---------responsive    code -------------------- */
+
+
+/* ----------setting media query for mobile--------------- */
+@media only screen and (max-width: 600px){
+    #eventh1{
+    
+        font-size: 40px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+    
+    #eventrow1{
+        display: grid;
+        grid-template-columns: repeat(2,max-content);
+        margin-bottom: 40px;
+        justify-content: space-around
+    }
+
+    #eventicon1{
+        height: 50px;
+        position: absolute;
+        
+    }
+    #frameicon{
+            height: 150px;
+            position: absolute;
+            transition: all 0.3s ease; 
+    }
+
 }
