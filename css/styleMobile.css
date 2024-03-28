@@ -1,5 +1,5 @@
 /* ----------setting media query for mobile--------------- */
-@media only screen and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
     /* homepage section */
     #hometext {
@@ -218,11 +218,12 @@
         align-items: center;
         width: 150px;
     }
+
     .tyrophoto {
-     
+
         height: 150px;
         width: 150px;
-     
+
     }
 
     #tyrodesc {
@@ -233,26 +234,26 @@
 
     #row1 {
         display: grid;
-        grid-template-columns: repeat(2,max-content);
+        grid-template-columns: repeat(2, max-content);
         margin-top: 20px;
         justify-content: space-around;
         align-items: center;
         grid-row-gap: 20px;
-        
+
     }
 
     #row2 {
         display: grid;
-        grid-template-columns: repeat(2,max-content);
+        grid-template-columns: repeat(2, max-content);
         margin-top: 20px;
         justify-content: space-around;
         align-items: center;
         grid-row-gap: 20px;
     }
-    
+
     #row3 {
         display: grid;
-        grid-template-columns: repeat(2,max-content);
+        grid-template-columns: repeat(2, max-content);
         margin-top: 20px;
         justify-content: space-around;
         align-items: center;
@@ -261,10 +262,11 @@
 
     .tyroimg {
         height: 100px;
-    
+
         border-radius: 50%;
         position: absolute;
     }
+
     .frame {
         position: absolute;
         z-index: 1;
@@ -279,4 +281,638 @@
         font-size: 17px;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+/*     css media queries for tablet */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* homepage section */
+    #hometext {
+        position: absolute;
+        top: 60px;
+
+        font-size: 100px;
+        margin: 0;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #desc {
+
+
+        width: 70%;
+
+        top: 200px;
+
+        font-size: 16px;
+    }
+
+    #date {
+
+        top: 300px;
+
+    }
+
+    #earth {
+        /* width: 1500px; */
+        width: 850px;
+        position: absolute;
+        bottom: -470px;
+
+
+        filter: drop-shadow(-10px -10px 70px rgba(62, 158, 247, 0.819));
+
+        transition: all 5s cubic-bezier(0.3, 0.4, 0.5, 1);
+        /* bottom: -1000px; */
+
+        animation: rotateEarth 70s linear infinite;
+        z-index: 5;
+
+
+
+    }
+
+
+
+
+
+    /* navigation section */
+
+    #navigationh1 {
+        font-size: 40px;
+
+
+    }
+
+    #navigation {
+
+
+
+        display: grid;
+        grid-template-columns: repeat(1, max-content);
+        justify-content: center;
+
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #navWrap {
+
+        /* border: 1px solid black; */
+        height: 400px;
+        width: 400px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+
+
+
+    }
+
+    .navItm img {
+        height: 60px;
+        width: 60px;
+        margin: 0;
+        filter: grayscale(.2);
+        /* border: 1px solid black; */
+        transition: all .2s ease;
+
+
+    }
+
+    #navigateh2 {
+        color: white;
+        font-size: 30px;
+        margin-top: 50px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #nav-content {
+        width: 200px;
+        font-size: 25px;
+
+        line-height: 60px;
+
+    }
+
+
+
+
+
+
+    /* --------------trust section----------------- */
+
+    #trusthead {
+        font-size: 40px;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+
+    }
+
+    #trustdesc {
+        width: 70%;
+        font-size: 17px;
+        color: white;
+        text-align: left;
+        margin: 0 auto;
+        padding-top: 20px;
+        font-family: "Poppins", sans-serif;
+        border: 1px solid rgb(239, 209, 12);
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: inset 5px 1px 5px 1px rgb(239, 209, 12);
+
+
+    }
+
+    #chairmanCont {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        justify-content: space-around;
+        margin-top: 30px;
+        grid-row-gap: 30px;
+    }
+
+    .landing-speaker-card {
+        width: 150px;
+        height: 240px;
+        /* margin-left: 3vw;
+    margin-right: 3vw; */
+    }
+
+
+    .speaker-card-name {
+
+        font-size: 13px;
+
+
+    }
+
+    .speaker-card-position-top {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+    }
+
+    /* trust faculty */
+    #facultyh1 {
+
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+
+    }
+
+    #facultycont {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        justify-content: space-around;
+        padding-bottom: 60px;
+        grid-row-gap: 30px;
+
+    }
+
+    #facultycont .landing-speaker-card {
+        width: 150px;
+        height: 230px;
+
+
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+
+
+
+
+
+
+    /* ---------Tyro section=------------ */
+
+
+    #tyrohead {
+        font-size: 40px;
+        color: #a6d3fd;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        font-family: 'myfont';
+        font-weight: 400;
+    }
+
+    .tyrocont {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+    }
+
+    .tyrophoto {
+
+        height: 150px;
+        width: 150px;
+
+    }
+
+    #tyrodesc {
+        font-size: 17px;
+        width: 70%;
+    }
+
+
+    #row1 {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        margin-top: 20px;
+        justify-content: space-around;
+        align-items: center;
+        grid-row-gap: 20px;
+
+    }
+
+    #row2 {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        margin-top: 40px;
+        justify-content: space-around;
+        align-items: center;
+        grid-row-gap: 20px;
+    }
+
+    #row3 {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        margin-top: 40px;
+        justify-content: space-around;
+        align-items: center;
+        grid-row-gap: 20px;
+    }
+
+    .tyroimg {
+        height: 100px;
+
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .frame {
+        position: absolute;
+        z-index: 1;
+        transition: height 0.2s ease;
+        height: 180px;
+    }
+
+    .tyroname {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+}
+
+
+
+
+
+
+/*------------------Media query for low reso tablet-------------- */
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* homepage section */
+    #hometext {
+        position: absolute;
+        top: 60px;
+
+        font-size: 100px;
+        margin: 0;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #desc {
+
+
+        width: 70%;
+
+        top: 200px;
+
+        font-size: 16px;
+    }
+
+    #date {
+
+        top: 330px;
+
+    }
+
+    #earth {
+        /* width: 1500px; */
+        width: 850px;
+        position: absolute;
+        bottom: -470px;
+
+
+        filter: drop-shadow(-10px -10px 70px rgba(62, 158, 247, 0.819));
+
+        transition: all 5s cubic-bezier(0.3, 0.4, 0.5, 1);
+        /* bottom: -1000px; */
+
+        animation: rotateEarth 70s linear infinite;
+        z-index: 5;
+
+
+
+    }
+
+
+
+
+
+    /* navigation section */
+
+    #navigationh1 {
+        font-size: 40px;
+
+
+    }
+
+    #navigation {
+
+
+
+        display: grid;
+        grid-template-columns: repeat(1, max-content);
+        justify-content: center;
+
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #navWrap {
+
+        /* border: 1px solid black; */
+        height: 400px;
+        width: 400px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+
+
+
+    }
+
+    .navItm img {
+        height: 60px;
+        width: 60px;
+        margin: 0;
+        filter: grayscale(.2);
+        /* border: 1px solid black; */
+        transition: all .2s ease;
+
+
+    }
+
+    #navigateh2 {
+        color: white;
+        font-size: 30px;
+        margin-top: 50px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #nav-content {
+        width: 200px;
+        font-size: 25px;
+
+        line-height: 60px;
+
+    }
+
+
+
+
+
+
+    /* --------------trust section----------------- */
+
+    #trusthead {
+        font-size: 40px;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+
+    }
+
+    #trustdesc {
+        width: 70%;
+        font-size: 17px;
+        color: white;
+        text-align: left;
+        margin: 0 auto;
+        padding-top: 20px;
+        font-family: "Poppins", sans-serif;
+        border: 1px solid rgb(239, 209, 12);
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: inset 5px 1px 5px 1px rgb(239, 209, 12);
+
+
+    }
+
+    #chairmanCont {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        justify-content: space-around;
+        margin-top: 30px;
+        grid-row-gap: 30px;
+    }
+
+    .landing-speaker-card {
+        width: 150px;
+        height: 240px;
+        /* margin-left: 3vw;
+margin-right: 3vw; */
+    }
+
+
+    .speaker-card-name {
+
+        font-size: 13px;
+
+
+    }
+
+    .speaker-card-position-top {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+    }
+
+    /* trust faculty */
+    #facultyh1 {
+
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+
+    }
+
+    #facultycont {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        justify-content: space-around;
+        padding-bottom: 60px;
+        grid-row-gap: 30px;
+
+    }
+
+    #facultycont .landing-speaker-card {
+        width: 150px;
+        height: 230px;
+
+
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+
+
+
+
+
+
+    /* ---------Tyro section=------------ */
+
+
+    #tyrohead {
+        font-size: 40px;
+        color: #a6d3fd;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        font-family: 'myfont';
+        font-weight: 400;
+    }
+
+    .tyrocont {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+    }
+
+    .tyrophoto {
+
+        height: 150px;
+        width: 150px;
+
+    }
+
+    #tyrodesc {
+        font-size: 17px;
+        width: 70%;
+    }
+
+
+    #row1 {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        margin-top: 20px;
+        justify-content: space-around;
+        align-items: center;
+        grid-row-gap: 20px;
+
+    }
+
+    #row2 {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        margin-top: 40px;
+        justify-content: space-around;
+        align-items: center;
+        grid-row-gap: 20px;
+    }
+
+    #row3 {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        margin-top: 40px;
+        justify-content: space-around;
+        align-items: center;
+        grid-row-gap: 20px;
+    }
+
+    .tyroimg {
+        height: 100px;
+
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .frame {
+        position: absolute;
+        z-index: 1;
+        transition: height 0.2s ease;
+        height: 180px;
+    }
+
+    .tyroname {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     css media queries for laptop */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    * {
+        color: red !important;
+    }
 }

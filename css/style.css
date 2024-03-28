@@ -787,7 +787,7 @@ body {
 }
 .tyrophoto {
     position: relative;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 200px;
     width: 200px;
     display: flex;
@@ -803,7 +803,7 @@ body {
 }
 
 .tyrocont {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;

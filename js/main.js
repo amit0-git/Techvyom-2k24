@@ -1,3 +1,6 @@
+
+console.log(window.innerWidth)
+
 window.addEventListener('load', () => {
   const earth = document.querySelector('#earth');
   // Set the final position of the Earth

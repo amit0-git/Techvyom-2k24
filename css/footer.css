@@ -47,6 +47,7 @@
     color: red;
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
 }
 
 #footer-right-address {
@@ -104,6 +105,11 @@
 
 
 /* -------------responsive footer for mobile -------------- */
+
+
+
+
+
 /* ----------setting media query for mobile--------------- */
 @media only screen and (max-width: 600px) {
 
@@ -112,6 +118,71 @@
         background-color: #1e1315;
         display: grid;
         grid-template-columns: auto;
+
+        width: 100vw;
+
+
+    }
+
+    #footer-right-head {
+        color: red;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #footer-right-address {
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+
+    #footer-right-phone {
+        font-size: 15px;
+        margin-top: 7px;
+        text-align: center;
+    }
+
+    #footer-right-email {
+        font-size: 15px;
+        margin-top: 7px;
+        color: white;
+        text-align: center;
+    }
+
+    #footer-left {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-left-down-head {
+        color: rgb(255, 255, 255);
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+
+}
+
+
+
+
+/*     css media queries for tablet */
+
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+    #footer {
+
+        background-color: #1e1315;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
 
         width: 100vw;
 

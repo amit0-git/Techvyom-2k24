@@ -200,9 +200,8 @@ body {
 
     #equinoxevents {
         display: grid;
-        grid-template-columns: repeat(2, max-content);
+        grid-template-columns: repeat(4, auto);
         justify-content: space-around;
-        grid-row-gap: 30px;
         margin-top: 30px;
     }
 
@@ -239,4 +238,74 @@ body {
     
     
     
+}
+
+
+
+
+
+/*     css media queries for tablet */
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    #equinoxevents {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-around;
+        margin-top: 30px;
+        grid-row-gap: 30px;
+    }
+}
+
+
+
+
+/*------------------Media query for low reso tablet-------------- */
+
+
+@media (min-width: 481px) and (max-width: 767px){
+
+    #equinoxevents {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-around;
+        margin-top: 30px;
+        grid-row-gap: 30px;
+    }
+
+    #poster {
+        width: 180px;
+    }
+    #eventbox {
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+    
+        height: 230px;
+        width: 200px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        background-size: cover;
+        transition: all 1s ease;
+    
+    
+    
+    }
+
+    #equinox-left-desc {
+        font-size:15px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #equinox-left-head {
+        font-size: 32px;
+        font-family: "Poppins", sans-serif;
+        color: rgb(27, 148, 102);
+        font-weight: bold;
+    }
 }
