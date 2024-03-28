@@ -9,9 +9,10 @@
 
 
 #eventscont{
-    background-color: black;
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%); */
     padding-bottom: 40px;
     width: 100vw;
+    position: relative;
 }
 #eventh1{
     margin: 0;

@@ -4,12 +4,13 @@
 
 #footer{
   
-    background-color: #1e1315;
+    /* background-color: #1e1315; */
     display: grid;
     grid-template-columns: 2fr 8fr;
     
     width: 100vw;
     overflow: hidden;
+    
 }
 
 
@@ -20,6 +21,7 @@
 #footer-left{
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 #footer-left-down-head{
     color:white;
@@ -34,6 +36,7 @@
     flex-direction: column;
     color: white;
     align-items: center;
+    padding: 20px;
 }
 
 

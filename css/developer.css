@@ -4,9 +4,13 @@
   }
 
 #developercont{
-    background-color: rgb(53, 52, 52);
+  position: relative;
+    /* background-color: rgb(53, 52, 52); */
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #developerh1{
@@ -18,3 +22,80 @@
     font-weight: 400;
     padding-top: 30px;
 }
+
+
+
+
+#lightning {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 250px;
+    width: 200px;
+    z-index: 1;
+
+
+
+ 
+  }
+
+  #developercardwrap{
+    margin-top: 30px;
+  }
+
+  #developercard {
+
+     /* height: 370px;  */
+    width: 280px;
+    border: 3px solid; 
+    border-image: linear-gradient(to bottom, rgb(74, 213, 252), rgb(247, 211, 11)) 3; 
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+
+    background-image: url(/assets/Animation\ -\ 1711599258435.gif);
+    background-size: 100%;
+
+  }
+
+  #amit {
+    position: absolute;
+    left: 10px;
+
+    top: 8px;
+    height: 230px;
+    width: 180px;
+    object-fit: cover;
+
+
+  }
+
+  #imgwrap {
+    position: relative;
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  #devname {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #devphone {
+    color: white;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+ 
+
+  #devemail {
+    color: white;
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+  }

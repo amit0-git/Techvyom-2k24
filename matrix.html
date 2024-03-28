@@ -5,51 +5,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
+    <!-- fontawesome icon cdn -->
+    <script src="https://kit.fontawesome.com/04fd96b6f4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-
-
-  <div id="box">
-    0
-  </div>
-  <div id="box1">
-    0
-  </div>
-
   <style>
-    #box {
-      height: 200px;
+    body {
+      background-color: black;
+    }
+
+    #lightning {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 250px;
       width: 200px;
-      background-color: red;
-      font-size: 60px;
+      z-index: 1;
+
+
+
+   
     }
+
+    #developercard {
+
+       height: 370px; 
+      width: 280px;
+      border: 3px solid; 
+      border-image: linear-gradient(to bottom, rgb(246, 246, 247), rgb(247, 211, 11)) 3; 
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+
+      background-image: url(/assets/Animation\ -\ 1711599258435.gif);
+      background-size: 100%;
+
+    }
+
+    #amit {
+      position: absolute;
+      left: 10px;
+
+      top: 8px;
+      height: 230px;
+      width: 180px;
+      object-fit: cover;
+
+
+    }
+
+    #imgwrap {
+      position: relative;
+      /* border: 1px solid red; */
+      width: 200px;
+      height: 250px;
+      margin-top: 20px;
+    }
+
+    #devname {
+      color: white;
+      font-size: 30px;
+      margin-top: 10px;
+    }
+
+    #devphone {
+      color: white;
+      margin-top: 10px;
+    }
+   
+
+    #devemail {
+      color: white;
+      padding-bottom: 10px;
+    }
+    
   </style>
-  <script src="anime/anime.min.js"></script>
-  <script>
-    var obj = document.getElementById("box");
-    var myObject = {
-      prop1: 0,
 
-    }
-    anime({
-      targets: myObject,
-      prop1: 50,
+  <div id="developercardwrap">
+    <div id="developercard">
+      <div id="imgwrap">
+        <img id="lightning" src="assets/6395303-ai.png" alt="">
+        <img id="amit" src="assets/IMG-20231213-WA0034.jpg" alt="">
 
+      </div>
+      <div id="devname">
+        Amit Verma
+      </div>
+      <div id="devphone">
+        <i class="fa-brands fa-whatsapp"></i>
+        7505574391
+      </div>
+      <div id="devemail">
+        <i class="fa-regular fa-envelope"></i>
+        root.avanti@gmail.com
+      </div>
 
-      round: 1,
-      easing: 'easeInOutExpo',
-      update: function() {
-        obj.innerHTML = JSON.stringify(myObject.prop1);
-      }
-    })
-
-
-
-  </script>
-
+    </div>
+  </div>
 
 </body>
 
