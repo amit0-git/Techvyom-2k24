@@ -330,14 +330,14 @@ body {
     margin: 0 auto;
     padding-top: 20px;
     font-family: "Poppins", sans-serif;
-    border: 1px solid rgb(131, 131, 255);
+    border: 1px solid rgb(239, 209, 12);
     border-radius: 10px;
     padding: 30px;
 
 
 
 
-    box-shadow: inset 5px 5px 10px 10px rgb(239, 209, 12);
+    box-shadow: inset 5px 1px 5px 1px rgb(239, 209, 12);
 
 
 }
@@ -679,7 +679,7 @@ body {
     border-radius: 10px;
     padding: 30px;
 
-    box-shadow: inset 5px 5px 10px 10px rgb(128, 234, 218);
+    box-shadow: inset 5px 1px 5px 1px rgb(131, 131, 255);
 
 }
 

@@ -47,10 +47,7 @@ const rightcard5 = document.getElementById("rightcard5")
 const facultyhead1 = document.getElementById("facultyh1")
 
 
-
 var observer = new IntersectionObserver(callback, options);
-
-
 function callback(entries) {
 
   entries.forEach(entry => {
