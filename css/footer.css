@@ -9,8 +9,8 @@
     grid-template-columns: 2fr 8fr;
 
     width: 100vw;
-
-
+    position: relative;
+    
 }
 
 
@@ -99,6 +99,8 @@
 #footer-right-email a:hover {
     color: rgb(93, 90, 90)
 }
+
+
 
 
 

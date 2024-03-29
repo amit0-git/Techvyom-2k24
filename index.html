@@ -7,6 +7,8 @@
 
   <title>Techvyom 2K24</title>
 
+  <link rel="icon" type="image/png" href="assets/artificial-intelligence.png" />
+
 
   <!--------CSS ------------------------ -->
   <link rel="stylesheet" href="css/style.css">
@@ -17,6 +19,11 @@
   <link rel="stylesheet" href="css/developer.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/stars.css">
+
+
+  <!-- game -->
+
+
 
 
   <!-- fontawesome icon cdn -->
@@ -56,12 +63,17 @@
 
     </div>
 
+    <!-- -------navbar section ------------------------- -->
+
     <div id="mobilenavbar">
       <ul>
-        <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</a></li>
-        <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Events</a></li>
-        <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Gallery</a></li>
-        <li><a href="#"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</a></li>
+        <li><a href="events.html"><i class="fa-solid fa-calendar-days" style="margin-right: 10px;"></i>Events</a></li>
+        <li><a href="hackathon.html"><i class="fa-solid fa-flag-checkered" style="margin-right: 10px;"></i>Hackathon</a></li>
+        <li><a href="rulebook.html"><i class="fa-solid fa-scale-balanced" style="margin-right: 10px;"></i>Rulebook</a></li>
+        <li><a href="gallery.html"><i class="fa-solid fa-photo-film" style="margin-right: 10px;"></i>Gallery</a></li>
+
+        <li class="gamenav"><a href="game.html"><i class="fa-solid fa-gamepad" style="margin-right: 10px;"></i>Gamezone</a></li>
 
 
       </ul>
@@ -74,10 +86,12 @@
       </div>
       <div id="navbar-right">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#navigation-wrap">Events</a></li>
+          <li><a href="#navigation-wrap">Hackathon</a></li>
+          <li><a href="#navigation-wrap">Rulebook</a></li>
+          <li><a href="#navigation-wrap">Gallery</a></li>
+          <li class="gamenav"><a href="game.html">Gamezone</a></li>
           <li id="navicon"><a href="javascript:void(0);" class="icon" onclick="mobileNav()">
               <i class="fa fa-bars"></i>
             </a></li>
@@ -124,7 +138,7 @@
 
 
             <div class="navItm">
-              <div id="navItm-name" class="nav-top">Home</div>
+              <div id="navItm-name" class="nav-top">Hackathon</div>
               <img src="assets/planet-earth.png" alt="">
             </div>
 
@@ -183,7 +197,7 @@
           <div id="right-nav">
 
             <div id="left-nav-arrow"><i class="fa-solid fa-arrow-left"></i></div>
-            <div id="nav-content">Home</div>
+            <div id="nav-content">Hackathon</div>
             <div id="right-nav-arrow"><i class="fa-solid fa-arrow-right"></i></div>
           </div>
 
@@ -864,6 +878,10 @@
     </div>
   </div>
 
+
+
+
+
   <!-- ----------------------------------footer ---------------------- -->
 
   <div id="footer">
@@ -919,6 +937,7 @@
 
 
 
+
   <!-- anime js file -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <!-- anime js file  for event desc -->
@@ -933,7 +952,13 @@
   <script src="js/main.js"></script>
   <script src="js/matrix.js"></script>
   <script src="js/faq.js"></script>
-  <script src="js/tyro.js"></script>
+  
+
+
+
+
+
+  <!-- games -->
 
 </body>
 

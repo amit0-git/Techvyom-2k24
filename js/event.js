@@ -68,3 +68,19 @@ const eventh11=document.getElementById("eventHH")
 eventh11.addEventListener("mouseenter", () => {
     randomTextAnimation("Events", eventh11)
 });
+
+
+
+
+//display game only on desktop
+
+const gamenav = document.getElementsByClassName("gamenav");
+
+Array.from(gamenav).forEach((element) => {
+  if (window.innerWidth <= 850) {
+    console.log("Hide Game Icon");
+    element.style.display = "none";
+  } else {
+    element.style.display = "block";
+  }
+});

@@ -4,6 +4,8 @@
     /* background-color: rgb(0, 0, 0); */
     position: relative;
     width: 100vw;
+  
+    overflow: hidden;
 
 }
 

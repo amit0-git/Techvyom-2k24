@@ -200,7 +200,7 @@ body {
 
     #equinoxevents {
         display: grid;
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(2, auto);
         justify-content: space-around;
         margin-top: 30px;
     }

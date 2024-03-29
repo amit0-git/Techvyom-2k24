@@ -4,31 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
+  <title>Hackathon 2.0</title>
   <link rel="icon" type="image/png" href="assets/artificial-intelligence.png" />
-  <!-- fontawesome icon cdn -->
-  <script src="https://kit.fontawesome.com/04fd96b6f4.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="css/gallery.css">
+  
+  <link rel="stylesheet" href="css/hackathon.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/stars.css">
+
+  <!-- fontawesome icon cdn -->
+  <script src="https://kit.fontawesome.com/04fd96b6f4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 
-  <div id="gallery">
 
-    <div class="wrapper" style="z-index: 0;">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
 
-    </div>
+  <div id="hackathon">
 
-    <!-- navbar section -->
-  
     <div id="mobilenavbar">
       <ul>
         <li><a href="index.html"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</a></li>
@@ -66,69 +59,69 @@
 
 
 
-    <h1 id="galleryh1">Gallery</h1>
+    <div id="hacksection">
+      <h1 id="hackh1">Hackathon 2.0</h1>
+
+      <div id="hackdate">2-3 May 2024</div>
+
+      <div id="hackdesc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ullam neque sequi deleniti accusantium fuga exercitationem reprehenderit assumenda quam corrupti asperiores distinctio omnis, velit aut reiciendis magni. Eveniet, laudantium exercitationem?
+      </div>
+
+      <div id="hackh2">Sponsors</div>
 
 
 
-    <div id="youtube">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/mcTsyht5VLc?si=6SXdY0QvK48GY69e" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/k7vACxrzdIg?si=CsPuExJ08Jkse5hW" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/k8zSPjuZuPI?si=mr3U0ULNBhBjewQ7" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+
+      <div id="sponsors">
+        <div class="scroller" data-direction="left" data-speed="fast">
+          <div class="scroller__inner">
+            <img src="https://i.pravatar.cc/150?img=1" alt="" />
+            <img src="https://i.pravatar.cc/150?img=2" alt="" />
+            <img src="https://i.pravatar.cc/150?img=3" alt="" />
+            <img src="https://i.pravatar.cc/150?img=4" alt="" />
+            <img src="https://i.pravatar.cc/150?img=5" alt="" />
+            <img src="https://i.pravatar.cc/150?img=6" alt="" />
+          </div>
+        </div>
+
+      </div>
+
+
+      <div id="moreinfo">
+        <div id="info">
+          <p id="infohead">For more info visit!</p>
+
+          <div id="hackbutton">
+            More
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div id="hackposter">
+        <img src="assets/Hackthon 2.0 Poster_SRMSCET_page-0001.jpg" alt="">
+      </div>
+
+
+
 
 
     </div>
-    <div id="photos">
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
-      <div id="ph">
-        <img src="assets/gal.jpg" alt="">
-      </div>
 
-    </div>
+
+
+
+
   </div>
 
-
-
-
-
   <!-- ----------------------------------footer ---------------------- -->
+
+
 
   <div id="footer">
 
@@ -176,9 +169,46 @@
 
 
 
-  <!-- js files -->
 
-  <script src="js/gallery.js"></script>
+  <script>
+    const scrollers = document.querySelectorAll(".scroller");
+
+    // If a user hasn't opted in for recuded motion, then we add the animation
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+
+    function addAnimation() {
+      scrollers.forEach((scroller) => {
+        // add data-animated="true" to every `.scroller` on the page
+        scroller.setAttribute("data-animated", true);
+
+        // Make an array from the elements within `.scroller-inner`
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        // For each item in the array, clone it
+        // add aria-hidden to it
+        // add it into the `.scroller-inner`
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute("aria-hidden", true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      });
+    }
+
+
+
+
+
+
+    
+  </script>
+
+
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

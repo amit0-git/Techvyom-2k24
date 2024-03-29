@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: 'myfont';
+    src: url('/font/good-times/goodtimesrg.otf') format('opentype');
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url("/assets/hack.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#hackathon {
+    /* background-color: black; */
+    color: white;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+
+
+}
+
+#hackh1 {
+    font-size: 60px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: 'myfont';
+    font-weight: 400;
+    backdrop-filter: blur(5px);
+    padding:5px
+
+
+}
+
+#hackdate {
+    text-align: center;
+    color: yellow;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#hacksection {
+    
+    padding-top: 100px;
+
+    width: 100vw;
+}
+
+#hackdesc {
+    color: white;
+    width: 80%;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    backdrop-filter: blur(5px);
+
+}
+
+#hackh2 {
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'myfont';
+    font-weight: 400;
+}
+
+#moreinfo {
+    display: flex;
+    justify-content: center;
+
+}
+
+#info {
+    border: 1px solid white;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+}
+
+#infohead {
+    margin: 0;
+    font-size: 40px;
+    font-family: 'myfont';
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+#hackbutton {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    width: 70px;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    backdrop-filter: blur(5px);
+    background-color: rgb(243, 155, 13);
+    user-select: none;
+}
+
+#hackbutton:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 252, 252, 0.726) 0px 5px 15px;
+}
+
+
+#hackposter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+#hackposter img {
+    object-fit: contain;
+
+    height: 700px;
+    width: 600px;
+}
+
+
+
+/* ---------------------------------------- */
+
+
+
+
+
+
+#sponsors {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.scroller {
+    max-width: 900px;
+
+}
+
+.scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+/* general styles */
+
+:root {
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-primary-100: hsl(205, 15%, 58%);
+    --clr-primary-400: hsl(215, 25%, 27%);
+    --clr-primary-800: hsl(217, 33%, 17%);
+    --clr-primary-900: hsl(218, 33%, 9%);
+}
+
+
+
+
+/* ----------setting media query for mobile--------------- */
+@media (min-width: 320px) and (max-width: 480px){
+
+
+   
+    
+    #hackh1 {
+        font-size: 40px;
+        color: white;
+        margin: 0;
+        text-align: center;
+        font-family: 'myfont';
+        font-weight: 400;
+        backdrop-filter: blur(5px);
+        padding:5px
+    
+    
+    }
+    
+    #hackdate {
+        text-align: center;
+        color: yellow;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+  
+    
+   
+    
+    #hackh2 {
+        font-size: 40px;
+        color: white;
+        margin: 0;
+        text-align: center;
+        margin-top: 40px;
+        font-family: 'myfont';
+        font-weight: 400;
+    }
+    
+    
+    
+    #info {
+        border: 1px solid white;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        backdrop-filter: blur(5px);
+    }
+    
+    #infohead {
+        
+        font-size: 30px;
+        
+    }
+    
+    #hackbutton {
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 18px;
+
+     
+    }
+    
+    #hackbutton:hover{
+        cursor: pointer;
+        box-shadow: rgba(255, 252, 252, 0.726) 0px 5px 15px;
+    }
+    
+    
+    #hackposter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    
+    }
+    
+    #hackposter img {
+        object-fit: contain;
+    
+        height: 450px;
+        width: 350px;
+    }
+    
+    
+
+}

@@ -8,6 +8,12 @@
     src: url('/font/good-times/goodtimesrg.otf') format('opentype');
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -31,6 +37,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-shadow: 0 10px 50px 10px rgb(51, 124, 169) ;
+    
 
 }
 
@@ -61,15 +70,15 @@ body {
     text-align: center;
     color: white;
     position: absolute;
-    top: 170px;
+    top: 190px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #date {
     color: yellow;
     position: absolute;
-    top: 250px;
+    top: 280px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
 }
@@ -80,7 +89,7 @@ body {
     /* width: 700px; */
     position: absolute;
     /* in the js code */
-    bottom: -1000px;
+    bottom: -1100px;
 
     filter: drop-shadow(-10px -10px 70px rgba(62, 158, 247, 0.819));
 
@@ -148,8 +157,9 @@ body {
 #navigation-wrap {
     height: 100%;
     width: 100vw;
+    /* box-shadow: 0 -10px 50px 10px rgb(51, 124, 169) ; */
     position: relative;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     /* background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%); */
 }
 
@@ -312,11 +322,12 @@ body {
 
 #nav-content {
     width: 200px;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
-    line-height: 55px;
+    line-height: 60px;
     text-align: center;
     font-family: "Poppins", sans-serif;
+   backdrop-filter: blur(5px);
 }
 
 #left-nav-arrow i,
@@ -332,6 +343,11 @@ body {
     padding: 10px;
     box-shadow: rgba(240, 236, 236, 0.847) 0px 3px 8px;
     background-color: rgb(90, 90, 248);
+}
+
+#left-nav-arrow:hover,
+#right-nav-arrow:hover {
+    cursor: pointer;
 }
 
 /* #left-nav-arrow i:hover {
@@ -354,7 +370,9 @@ body {
 }
 
 #nav-right-button:hover {
+    
     cursor: pointer;
+    box-shadow: rgba(255, 252, 252, 0.726) 0px 5px 15px;
 }
 
 
@@ -378,8 +396,8 @@ body {
     font-size: 50px;
     color: #a6d3fd;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     font-family: 'myfont';
     font-weight: 400;
@@ -409,7 +427,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, max-content);
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 
@@ -550,8 +568,8 @@ body {
     color: #a6d3fd;
     text-align: center;
     font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 100px;
+    margin-bottom: 90px;
     font-family: 'myfont';
     font-weight: 400;
 }
@@ -734,8 +752,8 @@ body {
     font-size: 50px;
     color: #a6d3fd;
     text-align: center;
-    padding-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 60px;
+    margin-bottom: 60px;
     font-family: 'myfont';
     font-weight: 400;
 }
@@ -846,7 +864,7 @@ body {
 #row1 {
     display: grid;
     grid-template-columns: repeat(3,max-content);
-    margin-top: 40px;
+    margin-top: 80px;
     justify-content: space-around;
     
 }

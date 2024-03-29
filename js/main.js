@@ -1,13 +1,6 @@
 
 console.log(window.innerWidth)
 
-window.addEventListener('load', () => {
-  const earth = document.querySelector('#earth');
-  // Set the final position of the Earth
-  // earth.style.width = "1500px"
-  earth.style.animationDuration = "70s"
-  // earth.style.bottom = '-1000px'; // Adjust according to the size of the image
-});
 
 
 // responsive navbar
@@ -30,7 +23,7 @@ function mobileNav() {
 
 
 const trusthead1 = document.getElementById("trusthead")
-const trustdesc = document.getElementById("trustdesc")
+const trustdesc11 = document.getElementById("trustdesc")
 
 const leftcard1 = document.getElementById("leftcard1")
 const leftcard2 = document.getElementById("leftcard2")
@@ -63,8 +56,13 @@ const tyrodesc1 = document.getElementById("tyrodesc")
 //developercardwrap
 const developercont = document.getElementById("developercardwrap")
 
+const options11 = {
+  threshold: 0.6
+}
 
-var observer = new IntersectionObserver(callback, options);
+
+var observer = new IntersectionObserver(callback, options11);
+
 function callback(entries) {
 
   entries.forEach(entry => {
@@ -122,33 +120,67 @@ function callback(entries) {
 
       observer.unobserve(entry.target);
     }
-    
+
 
   })
 
 }
 
 
-observer.observe(trusthead1);
-observer.observe(trustdesc);
-observer.observe(leftcard1);
-observer.observe(leftcard2);
 
-observer.observe(leftcard3);
-observer.observe(leftcard4);
-observer.observe(leftcard5);
 
-observer.observe(rightcard1);
-observer.observe(rightcard2);
-observer.observe(rightcard3);
-observer.observe(rightcard4);
-observer.observe(rightcard5);
 
-observer.observe(facultyhead1);
-observer.observe(devh1);
-observer.observe(developercont);
-observer.observe(navigationh11);
-observer.observe(navigationsection);
 
-observer.observe(tyrohead1);
-observer.observe(tyrodesc1);
+window.addEventListener('load', () => {
+  const earth = document.querySelector('#earth');
+
+  observer.observe(trusthead1);
+  observer.observe(trustdesc11);
+
+  observer.observe(leftcard1);
+  observer.observe(leftcard2);
+
+  observer.observe(leftcard3);
+  observer.observe(leftcard4);
+  observer.observe(leftcard5);
+
+  observer.observe(rightcard1);
+  observer.observe(rightcard2);
+  observer.observe(rightcard3);
+  observer.observe(rightcard4);
+  observer.observe(rightcard5);
+
+  observer.observe(facultyhead1);
+  observer.observe(devh1);
+  observer.observe(developercont);
+  observer.observe(navigationh11);
+  observer.observe(navigationsection);
+
+  observer.observe(tyrohead1);
+  observer.observe(tyrodesc1);
+
+
+
+
+});
+
+
+
+
+
+
+
+
+//display game only on desktop
+
+const gamenav = document.getElementsByClassName("gamenav");
+
+Array.from(gamenav).forEach((element) => {
+  if (window.innerWidth <= 850) {
+    console.log("Hide Game Icon");
+    element.style.display = "none";
+  } else {
+    element.style.display = "block";
+  }
+});
+
