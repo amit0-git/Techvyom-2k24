@@ -449,8 +449,8 @@ body {
 
 
 .landing-speaker-card {
-    width: 220px;
-    height: 350px;
+    width: 180px;
+    height: 290px;
     /* margin-left: 3vw;
     margin-right: 3vw; */
 }
@@ -509,6 +509,10 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
+
+}
+#dean-name{
+    font-size: 15px;
 }
 
 .speaker-card-image-container {
@@ -599,8 +603,8 @@ body {
 }
 
 #facultycont .landing-speaker-card {
-    width: 180px;
-    height: 290px;
+    width: 160px;
+    height: 250px;
 
     margin-left: 0;
     margin-right: 0;

@@ -157,6 +157,9 @@
 
 
     }
+    #dean-name{
+        font-size: 12px;
+    }
 
     .speaker-card-position-top {
         font-family: "Poppins", sans-serif;
@@ -458,9 +461,12 @@
 
     .speaker-card-name {
 
-        font-size: 13px;
+        font-size: 12px;
 
 
+    }
+    #dean-name{
+        font-size: 12px;
     }
 
     .speaker-card-position-top {
@@ -761,6 +767,9 @@ margin-right: 3vw; */
         font-size: 13px;
 
 
+    }
+    #dean-name{
+        font-size: 12px;
     }
 
     .speaker-card-position-top {

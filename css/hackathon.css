@@ -153,7 +153,7 @@ body {
 }
 
 .scroller {
-    max-width: 900px;
+    max-width: 1000px;
 
 }
 
@@ -162,6 +162,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+.scroller__inner img{
+height: 200px;
+object-fit: contain;
 }
 
 .scroller[data-animated="true"] {

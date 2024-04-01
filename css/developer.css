@@ -130,6 +130,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+#devsocial i{
+  color: white;
+  font-size: 20px;
+}
+#devsocial a{
+  margin: 0 5px 0 5px;
+}
+
 
 
 

@@ -3,3 +3,6 @@
 3. add event poster (techvyom)
 4. reduce size of components
 5. pre register form
+6. MRC page
+7. chatbot
+8. feedback

@@ -10,25 +10,25 @@ body {
     padding: 0;
     background: radial-gradient(ellipse at bottom, #263950 0%, #0a0b0d 100%);
     background-attachment: fixed;
-  
+
 }
 
 #eventsContainer {
-    
+
     padding-bottom: 20px;
     position: relative;
     height: auto;
     width: 100vw;
-   
 
-    
-   
+
+
+
 
 
 }
 
 #eventHH {
-    color:  #a6d3fd;
+    color: #a6d3fd;
     margin: 0;
     text-align: center;
 
@@ -52,7 +52,7 @@ body {
     height: 250px;
     margin-left: 20px;
     margin-right: 20px;
-
+    margin-top: 40px;
     border-radius: 10px;
 }
 
@@ -76,7 +76,7 @@ body {
 
     /* clip-path: polygon(50% 0%, 100% 0, 61% 48%, 100% 99%, 100% 100%, 32% 100%, 0 100%, 0 47%, 0 0);  left*/
     clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 80%, 100% 100%, 32% 100%, 0 100%, 29% 48%, 0 0);
-    background-image: url(/assets/2555355.jpg);
+    /* background-image: url(/assets/2555355.jpg); */
 
     background-size: cover;
     height: 250px;
@@ -87,6 +87,7 @@ body {
     grid-template-columns: repeat(4, auto);
     justify-content: space-around;
     margin-top: 30px;
+    margin-bottom: 90px;
 }
 
 #eventbox {
@@ -160,20 +161,22 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         border: 1px solid rgb(75, 239, 248);
-    
+
         height: 250px;
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 40px;
-    
+
         border-radius: 10px;
     }
+
     #eventHH {
-      
-    
+
+
         font-size: 40px;
-        
+
     }
+
     #equinox-left-head {
         font-size: 30px;
         font-family: "Poppins", sans-serif;
@@ -182,7 +185,7 @@ body {
     }
 
     #equinox-left-desc {
-        font-size:12px;
+        font-size: 12px;
         font-family: "Poppins", sans-serif;
     }
 
@@ -190,8 +193,8 @@ body {
 
         /* clip-path: polygon(50% 0%, 100% 0, 61% 48%, 100% 99%, 100% 100%, 32% 100%, 0 100%, 0 47%, 0 0);  left*/
         clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 80%, 100% 100%, 32% 100%, 0 100%, 29% 48%, 0 0);
-        background-image: url(/assets/2555355.jpg);
-    
+        /* background-image: url(/assets/2555355.jpg); */
+
         background-size: cover;
         height: 250px;
         border-top-right-radius: 10px;
@@ -203,13 +206,14 @@ body {
         grid-template-columns: repeat(2, auto);
         justify-content: space-around;
         margin-top: 30px;
+        
     }
 
     #eventbox {
         padding: 0;
         box-sizing: border-box;
         margin: 0;
-    
+
         height: 180px;
         width: 160px;
         position: relative;
@@ -217,13 +221,14 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         background-size: cover;
         transition: all 1s ease;
-    
-    
-    
+
+
+
     }
+
     #poster {
         width: 140px;
     }
@@ -235,9 +240,9 @@ body {
         font-size: 15px;
         font-family: "Poppins", sans-serif;
     }
-    
-    
-    
+
+
+
 }
 
 
@@ -247,7 +252,7 @@ body {
 /*     css media queries for tablet */
 
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
 
     #equinoxevents {
         display: grid;
@@ -264,7 +269,7 @@ body {
 /*------------------Media query for low reso tablet-------------- */
 
 
-@media (min-width: 481px) and (max-width: 767px){
+@media (min-width: 481px) and (max-width: 767px) {
 
     #equinoxevents {
         display: grid;
@@ -277,11 +282,12 @@ body {
     #poster {
         width: 180px;
     }
+
     #eventbox {
         padding: 0;
         box-sizing: border-box;
         margin: 0;
-    
+
         height: 230px;
         width: 200px;
         position: relative;
@@ -289,16 +295,16 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         background-size: cover;
         transition: all 1s ease;
-    
-    
-    
+
+
+
     }
 
     #equinox-left-desc {
-        font-size:15px;
+        font-size: 15px;
         font-family: "Poppins", sans-serif;
     }
 

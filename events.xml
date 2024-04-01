@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="/events.xsl" type="text/xsl"?>
+
+
+<collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="events.xsd">
+
+
+    <club NAME="Equinox Club">
+        <description>
+            Equinox club is a club of computer science and engineering. This club hosts various
+            activities.
+        </description>
+
+        <background>assets/2555355.jpg</background>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+    </club>
+
+
+    <club NAME="Robotics Club">
+        <description>
+            Robotics club is a club of mechanical engineering. This club hosts various
+            activities.
+        </description>
+
+        <background>assets/2555355.jpg</background>
+
+        <event>
+            <name>Robo Race</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>Glider Plane</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+    </club>
+
+    <club NAME="Robotics Club">
+        <description>
+            Robotics club is a club of mechanical engineering. This club hosts various
+            activities.
+        </description>
+
+        <background>assets/2555355.jpg</background>
+
+        <event>
+            <name>Robo Race</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>Glider Plane</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+    </club>
+    <club NAME="Robotics Club">
+        <description>
+            Robotics club is a club of mechanical engineering. This club hosts various
+            activities.
+        </description>
+
+        <background>assets/2555355.jpg</background>
+
+        <event>
+            <name>Robo Race</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>Glider Plane</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+        <event>
+            <name>C Expert</name>
+            <image>assets/digital_enigma_1.png</image>
+        </event>
+
+    </club>
+
+</collection>
