@@ -1,11 +1,16 @@
-
-console.log(window.innerWidth)
-
-
-
 // responsive navbar
 
 const mobilenavbar = document.getElementById("mobilenavbar")
+
+
+// bg audio
+
+const bgAudio=new Audio("/assets/bgaudio.mp3");
+bgAudio.currentSrc = 0;
+bgAudio.play();
+bgAudio.loop=true;
+
+
 
 function mobileNav() {
 
@@ -175,12 +180,29 @@ window.addEventListener('load', () => {
 
 const gamenav = document.getElementsByClassName("gamenav");
 
+const mobilegame=document.getElementsByClassName("mobilegame");
+
 Array.from(gamenav).forEach((element) => {
-  if (window.innerWidth <= 850) {
+  if (window.innerWidth >= 850) {
+
     console.log("Hide Game Icon");
-    element.style.display = "none";
-  } else {
     element.style.display = "block";
+  } else {
+    element.style.display = "none";
   }
 });
 
+
+
+//for mobile
+
+// Array.from(mobilegame).forEach((element) => {
+//   if (window.innerWidth <= 850) {
+
+//     console.log("Hide Game Icon");
+//     element.style.display = "list-item";
+    
+//   } else {
+//     element.style.display = "none";
+//   }
+// });

@@ -3,6 +3,15 @@
 3. add event poster (techvyom)
 4. reduce size of components
 5. pre register form
-6. MRC page
+
 7. chatbot
 8. feedback
+9. add map insite   --done
+10. add item shadow 
+
+11. space sound
+ 
+12. custom cursor   --done
+
+
+11. add loader

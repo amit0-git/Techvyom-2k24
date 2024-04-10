@@ -59,6 +59,10 @@ const developerh1 = document.getElementById("developerh1");
 
 
 
+const maphead=document.getElementById("map-head")
+
+
+
 
 
 eventh1.addEventListener("mouseenter", () => {
@@ -79,6 +83,10 @@ navigationh1.addEventListener("mouseenter", () => {
 
 developerh1.addEventListener("mouseenter", () => {
     randomTextAnimation("DESIGN & DEVELOPMENT TEAM", developerh1)
+});
+
+maphead.addEventListener("mouseenter", () => {
+    randomTextAnimation("VENUE", maphead)
 });
 
 

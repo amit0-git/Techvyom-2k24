@@ -4,7 +4,10 @@
     font-family: 'myfont';
     src: url('/font/good-times/goodtimesrg.otf') format('opentype');
 }
+*{
+    cursor: url("/assets/launch.png") 4 12, auto;
 
+}
 body {
     margin: 0;
     padding: 0;
