@@ -4,12 +4,12 @@
 4. reduce size of components
 5. pre register form
 
-7. chatbot
+
 8. feedback
 9. add map insite   --done
 10. add item shadow 
 
-11. space sound
+11. space sound    --done
  
 12. custom cursor   --done
 

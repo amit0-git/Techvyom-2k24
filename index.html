@@ -44,6 +44,44 @@
 
   <div id="homepage">
 
+    <style>
+      #satellite {
+        position: relative;
+        width: 400px;
+        /* Set width to match image width */
+        height: 400px;
+        /* Set height to match image height */
+        animation: movesatellite 5s linear infinite;
+        left: 10px;
+        /* Animation shorthand */
+      }
+
+      @keyframes movesatellite {
+        from {
+          left: 10px;
+          bottom: 10px;
+        }
+
+        to {
+          left: calc(100% - 400px - 10px);
+          /* 100% minus satellite width and 10px buffer */
+          top: calc(100% - 400px - 10px);
+          /* 100% minus satellite height and 10px buffer */
+        }
+      }
+
+      #satellite img {
+        width: 100%;
+        /* Make image responsive within its container */
+        height: auto;
+        /* Maintain aspect ratio */
+      }
+    </style>
+
+    <!-- <div id="satellite">
+      <img src="assets/satellite.png" alt="">
+    </div> -->
+
     <!-- shooting stars -->
 
 
@@ -944,7 +982,7 @@
   <!-- ---------------------Map Section------------------- -->
 
   <style>
-   
+
   </style>
 
 

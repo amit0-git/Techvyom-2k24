@@ -320,6 +320,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     /* border: 1px solid white;
     border-radius: 10px;
     padding: 10px; */
@@ -332,6 +333,8 @@ body {
     display: flex;
     border: 1px solid white;
     border-radius: 50px;
+    background-color: rgb(104, 134, 105);
+    box-shadow: rgba(12, 219, 230, 0.35) 0px 5px 15px;
 }
 
 #navigateh2 {

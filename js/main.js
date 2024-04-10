@@ -5,10 +5,10 @@ const mobilenavbar = document.getElementById("mobilenavbar")
 
 // bg audio
 
-const bgAudio=new Audio("/assets/bgaudio.mp3");
-bgAudio.currentSrc = 0;
-bgAudio.play();
-bgAudio.loop=true;
+// const bgAudio=new Audio("/assets/bgaudio.mp3");
+// bgAudio.currentSrc = 0;
+// bgAudio.play();
+// bgAudio.loop=true;
 
 
 
