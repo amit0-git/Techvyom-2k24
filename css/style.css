@@ -56,7 +56,8 @@ body {
 
 
     position: absolute;
-    top: 60px;
+    /* original 60px */
+    top: -150px; 
 
     font-size: 100px;
     margin: 0;
@@ -75,9 +76,11 @@ body {
     text-align: center;
     color: white;
     position: absolute;
-    top: 190px;
+    /* top: 190px; */
+    top:-100px;
     margin: 0 auto;
     font-size: 18px;
+    opacity: 0;
 }
 
 #date {
@@ -86,15 +89,20 @@ body {
     top: 280px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
+    opacity: 0;
+    border: 1px solid yellow;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
 }
 
 #earth {
-    width: 1500px;
+    /* original 1500px */
+    width: 500px;
 
     /* width: 700px; */
     position: absolute;
     /* in the js code */
-    bottom: -1100px;
+    bottom: 700px;
 
     filter: drop-shadow(-10px -10px 70px rgba(62, 158, 247, 0.819));
 
@@ -333,7 +341,7 @@ body {
     display: flex;
     border: 1px solid white;
     border-radius: 50px;
-    background-color: rgb(104, 134, 105);
+    background-color: rgb(86, 203, 236);
     box-shadow: rgba(12, 219, 230, 0.35) 0px 5px 15px;
 }
 
@@ -372,10 +380,10 @@ body {
     background-color: rgb(90, 90, 248);
 }
 
-#left-nav-arrow:hover,
+/* #left-nav-arrow:hover,
 #right-nav-arrow:hover {
     cursor: pointer;
-}
+} */
 
 /* #left-nav-arrow i:hover {
     height: 52px;
@@ -398,7 +406,7 @@ body {
 
 #nav-right-button:hover {
 
-    cursor: pointer;
+    /* cursor: pointer; */
     box-shadow: rgba(255, 252, 252, 0.726) 0px 5px 15px;
 }
 

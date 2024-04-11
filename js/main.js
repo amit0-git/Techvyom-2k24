@@ -137,7 +137,7 @@ function callback(entries) {
 
 
 window.addEventListener('load', () => {
-  const earth = document.querySelector('#earth');
+
 
   observer.observe(trusthead1);
   observer.observe(trustdesc11);
@@ -180,7 +180,7 @@ window.addEventListener('load', () => {
 
 const gamenav = document.getElementsByClassName("gamenav");
 
-const mobilegame=document.getElementsByClassName("mobilegame");
+const mobilegame = document.getElementsByClassName("mobilegame");
 
 Array.from(gamenav).forEach((element) => {
   if (window.innerWidth >= 850) {
@@ -194,15 +194,85 @@ Array.from(gamenav).forEach((element) => {
 
 
 
-//for mobile
+// earth,main text,desc animation to load from top
+function loadDate() {
+  anime({
+    targets: '#date',
+    opacity: 1,
 
-// Array.from(mobilegame).forEach((element) => {
-//   if (window.innerWidth <= 850) {
+    easing: 'cubicBezier(0.42, 0, 0.58, 1)',
+    duration: 2000,
+    delay: 6000
+  });
 
-//     console.log("Hide Game Icon");
-//     element.style.display = "list-item";
-    
-//   } else {
-//     element.style.display = "none";
-//   }
-// });
+}
+function loadDescText(top1) {
+  anime({
+    targets: '#desc',
+    top: top1,
+    opacity:1,
+
+    easing: 'cubicBezier(0.42, 0, 0.58, 1)',
+    duration: 3000,
+    delay: 4000
+  });
+
+}
+
+
+
+function loadMainText(top1) {
+  anime({
+    targets: '#hometext',
+    top: top1,
+
+    easing: 'cubicBezier(0.42, 0, 0.58, 1)',
+    duration: 2000,
+    delay: 5000
+  });
+
+}
+
+
+
+
+
+
+
+function loadEarth(num, width) {
+  const earth = document.querySelector('#earth');
+  anime({
+    targets: '#earth',
+    width: width,
+    bottom: num, // Center of the screen vertically
+    easing: 'cubicBezier(0.42, 0, 0.58, 1)',
+    duration: 2000,// Duration of the animation in milliseconds
+
+  });
+
+
+
+}
+
+if (window.innerWidth >= 320 && window.innerWidth <= 480) {
+
+  console.log("mobile animation")
+  // loadEarth("-1100px")
+  loadEarth("-240px", "600px")
+  loadDescText("180px")
+  loadMainText("90px")
+  loadDate()
+}
+
+
+else {
+  console.log("desktop animation")
+  loadEarth("-1100px", "1500px")
+  loadDescText("190px")
+  loadMainText("60px")
+  loadDate()
+}
+
+
+
+

@@ -2,7 +2,7 @@
 2. earth animation
 3. add event poster (techvyom)
 4. reduce size of components
-5. pre register form
+5. pre register form    --half done
 
 
 8. feedback

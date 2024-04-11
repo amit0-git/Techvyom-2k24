@@ -61,7 +61,9 @@
                                 <a href="gallery.html"><i class="fa-solid fa-photo-film"
                                         style="margin-right: 10px;"></i>Gallery</a>
                             </li>
-
+                            <li><a href="#"><i class="fa-regular fa-file" style="margin-right: 10px;"></i>Pre Register</a></li>
+                            <li class="mobilegame"><a href="space-tic-tac.html"><i class="fa-solid fa-gamepad"
+                                style="margin-right: 10px;"></i>Gamezone</a></li>
                             <li class="gamenav">
                                 <a href="game.html"><i class="fa-solid fa-gamepad"
                                         style="margin-right: 10px;"></i>Gamezone</a>
@@ -93,6 +95,7 @@
                                 <li>
                                     <a href="gallery.html">Gallery</a>
                                 </li>
+                                <li><a href="#">Pre Register</a></li>
                                 <li class="gamenav">
                                     <a href="game.html">Gamezone</a>
                                 </li>
