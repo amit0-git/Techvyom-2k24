@@ -16,17 +16,19 @@ window.onload = function () {
     load.style.display = "none";
     main.style.display = "flex";
 
-   
+    bgMusic.currentSrc = 0;
+
+    bgMusic.play();
+    bgMusic.loop = true;
+
+
+
 
 
     console.log('JavaScript has completely loaded.');
 };
 
 
-bgMusic.currentSrc = 0;
-
-bgMusic.play();
-bgMusic.loop = true;
 
 
 var winArray = []
@@ -231,7 +233,7 @@ function disableAfterWin() {
     var row = document.getElementsByClassName("box");
 
     Array.from(row).forEach((element) => {
-        
+
         element.disabled = true;
     });
 

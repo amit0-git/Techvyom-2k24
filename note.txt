@@ -1,5 +1,5 @@
-1. reduce image size
-2. earth animation
+1. reduce image size         --done
+2. earth animation          --done
 3. add event poster (techvyom)
 4. reduce size of components
 5. pre register form    --half done
