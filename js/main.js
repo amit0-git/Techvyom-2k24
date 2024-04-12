@@ -21,6 +21,7 @@ window.onload = function () {
     // Remove the event listeners to avoid creating multiple audio elements
     document.removeEventListener("click", handleClick);
     document.removeEventListener("mouseover", handleMouseover);
+    document.removeEventListener("touchstart", handleTouch);
   }
 
   // Click event listener to play audio
@@ -30,6 +31,11 @@ window.onload = function () {
 
   // Mouseover event listener to play audio
   function handleMouseover() {
+    playBackgroundAudio();
+  }
+
+  // Touch event listener to play audio
+  function handleTouch() {
     playBackgroundAudio();
   }
 
