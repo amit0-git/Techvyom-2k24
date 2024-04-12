@@ -8,10 +8,17 @@ window.onload = function () {
   const loader = document.getElementById("loader");
   loader.style.display = "none";
   webpage.style.display = "block";
+  const bgAudio = new Audio("/assets/bgaudio.mp3");
+
+  bgAudio.currentSrc = 0;
+  bgAudio.play();
+  bgAudio.loop=true;
 
 
 
 }
+
+
 
   // responsive navbar
 
@@ -20,11 +27,7 @@ window.onload = function () {
 
   // bg audio
 
-  const bgAudio = new Audio("/assets/bgaudio.mp3");
-
-  bgAudio.currentSrc = 0;
-  bgAudio.play();
-  bgAudio.loop=true;
+ 
 
 
 
