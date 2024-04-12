@@ -11,16 +11,24 @@ window.onload = function () {
 
 
 
+  const bgAudio = new Audio("/assets/bgaudio.mp3");
+  bgAudio.autoplay = true;
+  bgAudio.loop = true;
+
+};
 
 
 
-}
-const bgAudio = new Audio("/assets/bgaudio.mp3");
 
-bgAudio.currentSrc = 0;
-bgAudio.autoplay = true;
-bgAudio.play();
-bgAudio.loop = true;
+
+
+
+// const bgAudio = new Audio("/assets/bgaudio.mp3");
+
+// bgAudio.currentSrc = 0;
+// bgAudio.autoplay = true;
+// bgAudio.play();
+// bgAudio.loop = true;
 
 
 // responsive navbar
@@ -218,17 +226,17 @@ Array.from(gamenav).forEach((element) => {
 
 // earth,main text,desc animation to load from top
 
-function loadNav() {
-  anime({
-    targets: '#navbar',
-    top: "10px",
+// function loadNav() {
+//   anime({
+//     targets: '#navbar',
+//     top: "10px",
 
-    easing: 'cubicBezier(0.42, 0, 0.58, 1)',
-    duration: 1000,
-    delay: 7000
-  });
+//     easing: 'cubicBezier(0.42, 0, 0.58, 1)',
+//     duration: 1000,
+//     delay: 7000
+//   });
 
-}
+// }
 function loadDate() {
 
   anime({
@@ -297,7 +305,7 @@ if (window.innerWidth >= 320 && window.innerWidth <= 480) {
   loadDescText("180px")
   loadMainText("90px", 6000)
   loadDate()
-  loadNav()
+
 
 }
 
@@ -308,7 +316,7 @@ else {
   loadDescText("190px")
   loadMainText("60px", 5000)
   loadDate()
-  loadNav()
+
 }
 
 
