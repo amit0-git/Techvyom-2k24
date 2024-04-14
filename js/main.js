@@ -5,47 +5,47 @@ window.onload = function () {
   loader.style.display = "none";
   webpage.style.display = "block";
 
-  // Function to play background audio
-  function playBackgroundAudio() {
-    // Play background audio
-    const bgAudio = new Audio("/assets/bgaudio.mp3");
-    bgAudio.loop = true;
-    bgAudio.play()
-      .then(() => {
-        console.log("Audio is playing");
-      })
-      .catch(error => {
-        console.error("Error playing audio:", error);
-      });
-
-    // Remove the event listeners to avoid creating multiple audio elements
-    document.removeEventListener("click", handleClick);
-    document.removeEventListener("mouseover", handleMouseover);
-    document.removeEventListener("touchstart", handleTouch);
-  }
-
-  // Click event listener to play audio
-  function handleClick() {
-    playBackgroundAudio();
-  }
-
-  // Mouseover event listener to play audio
-  function handleMouseover() {
-    playBackgroundAudio();
-  }
-
-  // Touch event listener to play audio
-  function handleTouch() {
-    playBackgroundAudio();
-  }
-
-  // Add event listeners
-  document.addEventListener("click", handleClick);
-  document.addEventListener("mouseover", handleMouseover);
-  document.addEventListener("touchstart", handleTouch);
+  
 };
 
+// Function to play background audio
+function playBackgroundAudio() {
+  // Play background audio
+  const bgAudio = new Audio("/assets/bgaudio.mp3");
+  bgAudio.loop = true;
+  bgAudio.play()
+    .then(() => {
+      console.log("Audio is playing");
+    })
+    .catch(error => {
+      console.error("Error playing audio:", error);
+    });
 
+  // Remove the event listeners to avoid creating multiple audio elements
+  document.removeEventListener("click", handleClick);
+  document.removeEventListener("mouseover", handleMouseover);
+  document.removeEventListener("touchstart", handleTouch);
+}
+
+// Click event listener to play audio
+function handleClick() {
+  playBackgroundAudio();
+}
+
+// Mouseover event listener to play audio
+function handleMouseover() {
+  playBackgroundAudio();
+}
+
+// Touch event listener to play audio
+function handleTouch() {
+  playBackgroundAudio();
+}
+
+// Add event listeners
+document.addEventListener("click", handleClick);
+document.addEventListener("mouseover", handleMouseover);
+document.addEventListener("touchstart", handleTouch);
 
   // const bgAudio = new Audio("/assets/bgaudio.mp3");
 
