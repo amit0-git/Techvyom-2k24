@@ -6,6 +6,7 @@
 
 body {
     color: white;
+    user-select: none;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
@@ -14,15 +15,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  #loader img {
+#loader img {
     height: 200px;
-  }
+}
 
-  #main {
+#main {
     display: none;
-  }
+}
 
 
 
@@ -45,17 +46,17 @@ body {
     font-size: 80px;
     font-weight: bold;
     margin-bottom: 20px;
-    font-family:"myfont"
+    font-family: "myfont"
 
 }
 
-.main {
+#main {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    
+
 }
 
 .box {
@@ -233,7 +234,7 @@ body {
 #reset {
 
     font-size: 20px;
-
+    user-select: none;
     width: 130px;
     border-radius: 10px;
     margin-top: 20px;
@@ -287,9 +288,10 @@ body {
     margin-left: 50px;
 }
 
-#developer{
+#developer {
     position: absolute;
     bottom: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: grey;
+    user-select: none;
 }

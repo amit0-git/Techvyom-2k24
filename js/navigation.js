@@ -1,5 +1,5 @@
 //arr format name,img,link
-const arr = [["Hackathon", document.querySelector("#navWrap > div:nth-child(1) > img"), "hackathon.html"], ["Events", document.querySelector("#navWrap > div:nth-child(3) > img"), "events.html"], ["Rulebook", document.querySelector("#navWrap > div:nth-child(9) > img"), "rulebook.html"], ["Gallery", document.querySelector("#navWrap > div:nth-child(7) > img"), "gallery.html"]]
+const arr = [["Hackathon", document.querySelector("#navWrap > div:nth-child(1) > img"), "hackathon.html"], ["Events", document.querySelector("#navWrap > div:nth-child(3) > img"), "events.html"], ["Rulebook", document.querySelector("#navWrap > div:nth-child(9) > img"), "rulebook.html"], ["Gallery", document.querySelector("#navWrap > div:nth-child(7) > img"), "gallery.html"],["Home", document.querySelector("#navWrap > div:nth-child(5) > img"), "index.html"]]
 var start = 0
 const leftArrow = document.getElementById("left-nav-arrow");
 const rightArrow = document.getElementById("right-nav-arrow");
@@ -17,7 +17,7 @@ leftArrow.addEventListener("click", navigateBac)
 button.addEventListener("click", openLink)
 
 function openLink() {
-    window.open(arr[start][2], '_blank')
+    window.open(arr[start][2], '_self')
 }
 
 function navigateFor() {

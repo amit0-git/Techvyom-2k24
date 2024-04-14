@@ -42,6 +42,7 @@ window.onload = function () {
   // Add event listeners
   document.addEventListener("click", handleClick);
   document.addEventListener("mouseover", handleMouseover);
+  document.addEventListener("touchstart", handleTouch);
 };
 
 

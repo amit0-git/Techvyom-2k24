@@ -16,16 +16,45 @@ window.onload = function () {
     load.style.display = "none";
     main.style.display = "flex";
 
-    bgMusic.currentSrc = 0;
+    // Function to play background audio
+    function playBackgroundAudio() {
+        // Play background audio
+        var bgMusic = new Audio("assets/chipi chipi chapa chapa dubi dubi daba daba (looped).mp3")
+        bgMusic.currentSrc=0;
+        bgMusic.loop = true;
+        bgMusic.play()
+            .then(() => {
+                console.log("Audio is playing");
+            })
+            .catch(error => {
+                console.error("Error playing audio:", error);
+            });
 
-    bgMusic.play();
-    bgMusic.loop = true;
+        // Remove the event listeners to avoid creating multiple audio elements
+        document.removeEventListener("click", handleClick);
+        document.removeEventListener("mouseover", handleMouseover);
+        document.removeEventListener("touchstart", handleTouch);
+    }
 
+    // Click event listener to play audio
+    function handleClick() {
+        playBackgroundAudio();
+    }
 
+    // Mouseover event listener to play audio
+    function handleMouseover() {
+        playBackgroundAudio();
+    }
 
+    // Touch event listener to play audio
+    function handleTouch() {
+        playBackgroundAudio();
+    }
 
-
-    console.log('JavaScript has completely loaded.');
+    // Add event listeners
+    document.addEventListener("click", handleClick);
+    document.addEventListener("mouseover", handleMouseover);
+    document.addEventListener("touchstart", handleTouch);
 };
 
 

@@ -376,7 +376,7 @@ body {
     display: flex;
     border: 1px solid white;
     border-radius: 50px;
-    background-color: rgb(86, 203, 236);
+    background-color: rgb(79, 89, 92);
     box-shadow: rgba(12, 219, 230, 0.35) 0px 5px 15px;
 }
 
@@ -437,6 +437,7 @@ body {
     border: 2px solid white;
     color: white;
     border-radius: 5px;
+    user-select: none;
 }
 
 #nav-right-button:hover {
