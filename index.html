@@ -38,7 +38,25 @@
 
 
   <!-- loader -->
+ <!-- Audio element with autoplay attribute -->
+ <audio autoplay id="backgroundAudio">
+  <source src="/assets/bgaudio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
+<script>
+  // JavaScript to play the audio when the page is loaded
+  window.onload = function() {
+    const bgAudio = document.getElementById("backgroundAudio");
+    bgAudio.play()
+      .then(() => {
+        console.log("Audio is playing");
+      })
+      .catch(error => {
+        console.error("Error playing audio:", error);
+      });
+  };
+</script>
 
   <div id="loader">
     <img src="assets//BHW_Binary_Black_Holes_Accretion_Disk (2).gif" alt="">
