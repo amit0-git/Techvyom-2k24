@@ -39,15 +39,23 @@
 
   <!-- loader -->
  <!-- Audio element with autoplay attribute -->
- 
- <audio src="https://www.bensound.com/bensound-music/bensound-moose.mp3"></audio>
+ <audio autoplay id="backgroundAudio">
+  <source src="./assets/bgaudio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 <script>
- window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  audio.volume = 0.6;
-  audio.play();
-});
+  // JavaScript to play the audio when the page is loaded
+  window.onload = function() {
+    const bgAudio = document.getElementById("backgroundAudio");
+    bgAudio.play()
+      .then(() => {
+        console.log("Audio is playing");
+      })
+      .catch(error => {
+        console.error("Error playing audio:", error);
+      });
+  };
 </script>
 
   <div id="loader">
