@@ -9,9 +9,9 @@
 9. add map insite   --done
 10. add item shadow 
 
-11. space sound    --done
+11. space sound    -- not working properly  
  
-12. custom cursor   --done
+12. custom cursor   --not responsive
 
 
-11. add loader
+11. add loader   --done
