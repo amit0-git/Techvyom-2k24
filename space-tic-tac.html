@@ -48,10 +48,6 @@
 
 
 
-    <audio autoplay loop id="backgroundAudio">
-      <source src="assets/chipi chipi chapa chapa dubi dubi daba daba (looped).mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
 
     <div id="speaker"></div>
     
@@ -94,16 +90,14 @@
 
   </div>
   <script>
-    window.onload = function() {
-      const bgAudio = document.getElementById("backgroundAudio");
-      bgAudio.play()
-        .then(() => {
-          console.log("Audio is playing");
-        })
-        .catch(error => {
-          console.error("Error playing audio:", error);
-        });
-    };
+    var bgMusic = new Audio("assets/chipi chipi chapa chapa dubi dubi daba daba (looped).mp3")
+    bgMusic.currentSrc = 0;
+
+    bgMusic.play();
+    bgMusic.loop = true;
+
+    //display game nav link in desktop mode only
+
   </script>
   <script src="space-tic-tac/main.js"></script>
  
