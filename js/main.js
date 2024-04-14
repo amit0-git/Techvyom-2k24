@@ -11,7 +11,7 @@ window.onload = function () {
 // Function to play background audio
 function playBackgroundAudio() {
   // Play background audio
-  const bgAudio = new Audio("/assets/bgaudio.mp3");
+  const bgAudio = new Audio("./assets/bgaudio.mp3");
   bgAudio.loop = true;
   bgAudio.play()
     .then(() => {
