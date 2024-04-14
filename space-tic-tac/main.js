@@ -17,44 +17,44 @@ window.onload = function () {
     main.style.display = "flex";
 
     // Function to play background audio
-    function playBackgroundAudio() {
-        // Play background audio
-        var bgMusic = new Audio("assets/chipi chipi chapa chapa dubi dubi daba daba (looped).mp3")
-        bgMusic.currentSrc=0;
-        bgMusic.loop = true;
-        bgMusic.play()
-            .then(() => {
-                console.log("Audio is playing");
-            })
-            .catch(error => {
-                console.error("Error playing audio:", error);
-            });
+    // function playBackgroundAudio() {
+    //     // Play background audio
+    //     var bgMusic = new Audio("assets/chipi chipi chapa chapa dubi dubi daba daba (looped).mp3")
+    //     bgMusic.currentSrc=0;
+    //     bgMusic.loop = true;
+    //     bgMusic.play()
+    //         .then(() => {
+    //             console.log("Audio is playing");
+    //         })
+    //         .catch(error => {
+    //             console.error("Error playing audio:", error);
+    //         });
 
-        // Remove the event listeners to avoid creating multiple audio elements
-        document.removeEventListener("click", handleClick);
-        document.removeEventListener("mouseover", handleMouseover);
-        document.removeEventListener("touchstart", handleTouch);
-    }
+    //     // Remove the event listeners to avoid creating multiple audio elements
+    //     document.removeEventListener("click", handleClick);
+    //     document.removeEventListener("mouseover", handleMouseover);
+    //     document.removeEventListener("touchstart", handleTouch);
+    // }
 
-    // Click event listener to play audio
-    function handleClick() {
-        playBackgroundAudio();
-    }
+    // // Click event listener to play audio
+    // function handleClick() {
+    //     playBackgroundAudio();
+    // }
 
-    // Mouseover event listener to play audio
-    function handleMouseover() {
-        playBackgroundAudio();
-    }
+    // // Mouseover event listener to play audio
+    // function handleMouseover() {
+    //     playBackgroundAudio();
+    // }
 
-    // Touch event listener to play audio
-    function handleTouch() {
-        playBackgroundAudio();
-    }
+    // // Touch event listener to play audio
+    // function handleTouch() {
+    //     playBackgroundAudio();
+    // }
 
-    // Add event listeners
-    document.addEventListener("click", handleClick);
-    document.addEventListener("mouseover", handleMouseover);
-    document.addEventListener("touchstart", handleTouch);
+    // // Add event listeners
+    // document.addEventListener("click", handleClick);
+    // document.addEventListener("mouseover", handleMouseover);
+    // document.addEventListener("touchstart", handleTouch);
 };
 
 
