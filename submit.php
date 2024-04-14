@@ -1,16 +1,64 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "your-email@gmail.com"; // Your Gmail address
-    $subject = "Message from website";
-    $email = $_POST["email"];
-    $message = $_POST["message"];
-    $headers = "From: $email";
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
 
-    // Send email
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Email sent successfully.";
-    } else {
-        echo "Failed to send email.";
+
+
+use PHPMailer\PHPMailer\PHPMailer;
+//use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
+
+
+//Create an instance; passing `true` enables exceptions
+
+
+if (isset($_POST["send"])) {
+
+    $mail = new PHPMailer(true);
+
+    try {
+        //Server settings
+        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        $mail->isSMTP();                                            //Send using SMTP
+        $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
+        $mail->SMTPAuth = true;                                   //Enable SMTP authentication
+        $mail->Username = 'knuthmoris@gmail.com';                     //SMTP username
+        $mail->Password = 'gwwwmazbzdkdhurt';                         //SMTP password
+        $mail->SMTPSecure = "ssl";
+        //$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+        $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+        //Recipients
+        $mail->setFrom('knuthmoris@gmail.com', 'Techvyom 2K24');
+
+        $mail->addAddress($_POST["EMAIL"], 'Joe User');     //Add a recipient
+        // $mail->addAddress('ellen@example.com');               //Name is optional
+        //$mail->addReplyTo('info@example.com', 'Information');
+        //$mail->addCC('cc@example.com');
+        //$mail->addBCC('bcc@example.com');
+
+        //Attachments
+        //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+        //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+
+        //Content
+        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->Subject = $_POST["subject"];
+        $mail->Body = $_POST["message"];
+        //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+        $mail->send();
+        echo "Send Successfully!";
+
     }
+    
+    catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+
 }
-?>
