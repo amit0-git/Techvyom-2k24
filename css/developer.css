@@ -72,6 +72,9 @@
 #developercardwrap {
   margin-top: 30px;
 }
+#developercardwrap:hover, #devsocial:hover{
+  cursor: pointer !important;
+}
 
 #developercard {
 
@@ -89,7 +92,9 @@
   background-size: 100%;
 
 }
-
+#developercard:hover{
+  cursor: pointer !important;
+}
 #amit {
   position: absolute;
   left: 10px;

@@ -285,7 +285,12 @@
         color: white;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
-        font-size: 17px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .tyrodesc {
+        font-size: 12px;
+        
     }
 
 
