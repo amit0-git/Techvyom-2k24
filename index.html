@@ -91,8 +91,10 @@
           </li>
           <li><a href="#navigation-wrap"><i class="fa-solid fa-photo-film" style="margin-right: 10px;"></i>Gallery</a>
           </li>
-          <li><a href="#"><i class="fa-regular fa-file" style="margin-right: 10px;"></i>Pre Register</a></li>
 
+          
+          <li><a href="#"><i class="fa-regular fa-file" style="margin-right: 10px;"></i>Pre Register</a></li>
+          <li><a href="#queryformwrap"><i class="fa-regular fa-envelope" style="margin-right: 10px;"></i>Contact Us</a></li>
           <li class="mobilegame"><a href="space-tic-tac.html"><i class="fa-solid fa-gamepad"
                 style="margin-right: 10px;"></i>Gamezone</a></li>
 
@@ -116,6 +118,7 @@
             <li><a href="#navigation-wrap">Rulebook</a></li>
             <li><a href="#navigation-wrap">Gallery</a></li>
             <li><a href="#">Pre Register</a></li>
+            <li><a href="#queryformwrap">Contact Us</a></li>
             <li class="gamenav"><a href="game.html">Gamezone</a></li>
             <!-- <li class="mobilegame"><a href="space-tic-tac.html">Gamezone</a></li> -->
 
@@ -595,7 +598,7 @@
           <div class="tyrocont">
             <div class="tyrophoto">
               <img src="assets/fame1.png" height="200px" class="frame" srcset="">
-              <img src="assets/IMG-20231213-WA0034.jpg" class="tyroimg" alt="" srcset="">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png" class="tyroimg" alt="" srcset="">
 
             </div>
             <div class="tyroname">Divyanshu Chauhan</div>
@@ -822,7 +825,7 @@
           <div id="developercard">
             <div id="imgwrap">
               <img id="lightning" src="assets/6395303-ai.png" alt="">
-              <img id="amit" src="assets/IMG-20231213-WA0034.jpg" alt="">
+              <img id="amit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png" alt="">
 
             </div>
             <div id="devname">
@@ -850,6 +853,29 @@
 
 
       </div>
+
+
+
+<!-- ----------------query form     -->
+
+<div id="queryformwrap">
+  <h1 id="queryh1">QUERIES & FEEDBACK</h1>
+  <div id="queryform">
+      <h2>Query/Feedback</h2>
+      <form action="submit.php" method="post">
+          <label for="name" id="label1">Name</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Your Email</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="subject">Subject</label><br>
+          <input type="text" id="subject" name="subject" required><br><br>
+          <label for="message">Query</label><br>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+          <input type="submit" value="Submit" name="send">
+      </form>
+  </div>
+</div>
+
 
       <!-- --------FAQ Section  -------------------------- -->
 
@@ -937,12 +963,10 @@
 
       <!-- ---------------------Map Section------------------- -->
 
-      <style>
-
-      </style>
+      
 
 
-      <div class="map-container">
+      <div id="mapContainer">
         <div id="map-head">
           VENUE
         </div>

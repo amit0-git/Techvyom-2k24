@@ -965,13 +965,26 @@ body {
 
 /* ---------------map  section------------------------ */
 
-.map-container {
+#mapContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
 }
+
+#mapContainer.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 
 #map-head {
     font-size: 50px;
@@ -1006,4 +1019,110 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+
+
+
+/* ---------------query form   ---------------------- */
+#queryh1 {
+    font-size: 50px;
+    color: #a6d3fd;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    font-family: 'myfont';
+    font-weight: 400;
+}
+
+#queryform h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+:root {
+    --border-color: rgb(5, 207, 252);
+}
+
+#queryformwrap {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+
+
+}
+
+
+
+
+/* #tyrodesc {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+} */
+
+#queryformwrap.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+   
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    border-color: var(--border-color);
+    color: white;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    padding: 5px 0px 5px 5px;
+
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 25px;
+}
+
+textarea {
+    height: 90px;
+}
+
+#queryform {
+    border: 1px solid var(--border-color);
+    padding: 20px 20px 40px 20px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: var(--border-color) 0px 5px 15px;
+}
+
+#queryform label {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: rgb(25, 209, 215);
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }

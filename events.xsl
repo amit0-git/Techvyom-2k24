@@ -62,6 +62,7 @@
                                         style="margin-right: 10px;"></i>Gallery</a>
                             </li>
                             <li><a href="#"><i class="fa-regular fa-file" style="margin-right: 10px;"></i>Pre Register</a></li>
+                            <li><a href="index.html#queryformwrap"><i class="fa-regular fa-envelope" style="margin-right: 10px;"></i>Contact Us</a></li>
                             <li class="mobilegame"><a href="space-tic-tac.html"><i class="fa-solid fa-gamepad"
                                 style="margin-right: 10px;"></i>Gamezone</a></li>
                             <li class="gamenav">
@@ -96,6 +97,7 @@
                                     <a href="gallery.html">Gallery</a>
                                 </li>
                                 <li><a href="#">Pre Register</a></li>
+                                <li><a href="index.html#queryformwrap">Contact Us</a></li>
                                 <li class="gamenav">
                                     <a href="game.html">Gamezone</a>
                                 </li>

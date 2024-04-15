@@ -161,7 +161,8 @@
 
 
     }
-    #dean-name{
+
+    #dean-name {
         font-size: 12px;
     }
 
@@ -288,9 +289,10 @@
         text-align: center;
         font-size: 14px;
     }
+
     .tyrodesc {
         font-size: 12px;
-        
+
     }
 
 
@@ -304,26 +306,56 @@
         font-size: 40px;
         color: #a6d3fd;
         margin-top: 70px;
-    
+
         font-family: "myfont";
-      }
-    
-      .map-head-1 {
+    }
+
+    .map-head-1 {
         font-size: 18px;
         color: white;
         margin-top: 20px;
         text-align: center;
         font-family: "Poppins", sans-serif;
-      }
-    
-      .map-head-2 {
+    }
+
+    .map-head-2 {
         font-size: 12px;
         font-family: "Poppins", sans-serif;
         color: white;
         margin-top: 15px;
         text-align: center;
         padding: 0 5px 0 5px;
-      }
+    }
+
+
+    /* ---------------query form   ---------------------- */
+    #queryh1 {
+        font-size: 40px;
+        color: #a6d3fd;
+        text-align: center;
+        padding-top: 60px;
+        margin-bottom: 60px;
+        font-family: 'myfont';
+        font-weight: 400;
+    }
+
+   
+
+   
+
+    
+
+    #queryform {
+        border: 1px solid var(--border-color);
+        padding: 20px 20px 40px 20px;
+        border-radius: 10px;
+        width: 300px;
+    }
+
+  
+
+    
+
 
 }
 
@@ -384,7 +416,7 @@
         /* bottom: -1000px; */
 
         animation: rotateEarth 70s linear infinite;
-        z-index: 5;
+        z-index: 4;
 
 
 
@@ -506,7 +538,8 @@
 
 
     }
-    #dean-name{
+
+    #dean-name {
         font-size: 12px;
     }
 
@@ -687,7 +720,7 @@
         /* bottom: -1000px; */
 
         animation: rotateEarth 70s linear infinite;
-        z-index: 5;
+        z-index: 4;
 
 
 
@@ -809,7 +842,8 @@ margin-right: 3vw; */
 
 
     }
-    #dean-name{
+
+    #dean-name {
         font-size: 12px;
     }
 

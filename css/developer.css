@@ -72,7 +72,9 @@
 #developercardwrap {
   margin-top: 30px;
 }
-#developercardwrap:hover, #devsocial:hover{
+
+#developercardwrap:hover,
+#devsocial:hover {
   cursor: pointer !important;
 }
 
@@ -81,7 +83,7 @@
   /* height: 370px;  */
   width: 280px;
   border: 3px solid;
-  border-image: linear-gradient(to bottom, rgb(74, 213, 252), rgb(247, 211, 11)) 3;
+  border-image: linear-gradient(to bottom, rgb(74, 213, 252), rgb(247, 211, 11)) 6;
   display: flex;
 
   flex-direction: column;
@@ -91,10 +93,19 @@
   background-image: url(/assets/Animation\ -\ 1711599258435.gif);
   background-size: 100%;
 
+  box-shadow: rgb(247, 211, 11) 0px 5px 15px;
+
+  padding-bottom: 10px;
+
+
+
 }
-#developercard:hover{
+
+
+#developercard:hover {
   cursor: pointer !important;
 }
+
 #amit {
   position: absolute;
   left: 10px;
@@ -135,11 +146,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-#devsocial i{
+#devsocial i {
   color: white;
   font-size: 20px;
 }
-#devsocial a{
+
+#devsocial a {
   margin: 0 5px 0 5px;
 }
 
@@ -170,12 +182,12 @@
 
   }
 
-  
-#devname {
-  
-  font-size: 25px;
- 
-}
+
+  #devname {
+
+    font-size: 25px;
+
+  }
 
 
 

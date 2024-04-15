@@ -61,7 +61,7 @@ const developerh1 = document.getElementById("developerh1");
 
 const maphead=document.getElementById("map-head")
 
-
+const queryh1 = document.getElementById("queryh1")
 
 
 
@@ -88,6 +88,11 @@ developerh1.addEventListener("mouseenter", () => {
 maphead.addEventListener("mouseenter", () => {
     randomTextAnimation("VENUE", maphead)
 });
+
+queryh1.addEventListener("mouseenter", () => {
+    randomTextAnimation("QUERIES & FEEDBACK", queryh1)
+});
+
 
 
 
