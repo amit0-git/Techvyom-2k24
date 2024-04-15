@@ -127,16 +127,17 @@ body {
     border-radius: 5px;
 }
 
+  
 #earth {
     /* original 1500px */
     width: 500px;
-
+    filter: hue-rotate(10deg);
     /* width: 700px; */
     position: absolute;
     /* in the js code */
     bottom: 700px;
 
-    filter: drop-shadow(-10px -10px 70px rgba(62, 158, 247, 0.819));
+    filter: drop-shadow(-20px -10px 70px rgba(62, 158, 247, 0.819));
 
     transition: all 5s cubic-bezier(0.3, 0.4, 0.5, 1);
     /* bottom: -1000px; */
@@ -162,12 +163,32 @@ body {
 }
 
 
-/* .mobilegame{
-    display: none;
-} */
+#ship {
+    height: 500px;
+    transform: rotate(45deg);
+    left: -720px;
+    position: absolute;
+    bottom: 0px;
+    animation: moveShip 7s linear infinite;
+    z-index: -1;
+    opacity: 0.5;
+    animation-fill-mode: forwards;
+    animation-delay: 6000ms;
+         }
 
+  @keyframes moveShip {
+    0%{
+      bottom: 0px;
+      left: -720px;
+    }
 
-
+    100% {
+      bottom: calc(100%);
+      /* Height of ship */
+      left: calc(100%);
+      /* Width of viewport minus width of ship */
+    }
+  }
 
 
 

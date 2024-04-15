@@ -47,6 +47,34 @@
     }
 
 
+    #ship {
+        height: 200px;
+        transform: rotate(45deg);
+        left: -350px;
+        position: absolute;
+        bottom: 0px;
+        animation: moveShip 7s linear infinite;
+        z-index: -1;
+        opacity: 0.5;
+        animation-fill-mode: forwards;
+        animation-delay: 5000ms;
+             }
+    
+      @keyframes moveShip {
+        0% {
+          bottom: 0px;
+          left: -350px;
+        }
+    
+       100% {
+          bottom: calc(100%);
+          /* Height of ship */
+          left: calc(100%);
+          /* Width of viewport minus width of ship */
+        }
+      }
+
+
 
 
 
