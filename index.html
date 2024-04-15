@@ -11,6 +11,7 @@
 
 
   <!--------CSS ------------------------ -->
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/styleMobile.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -92,9 +93,10 @@
           <li><a href="#navigation-wrap"><i class="fa-solid fa-photo-film" style="margin-right: 10px;"></i>Gallery</a>
           </li>
 
-          
+
           <li><a href="#"><i class="fa-regular fa-file" style="margin-right: 10px;"></i>Pre Register</a></li>
-          <li><a href="#queryformwrap"><i class="fa-regular fa-envelope" style="margin-right: 10px;"></i>Contact Us</a></li>
+          <li><a href="#queryformwrap"><i class="fa-regular fa-envelope" style="margin-right: 10px;"></i>Contact Us</a>
+          </li>
           <li class="mobilegame"><a href="space-tic-tac.html"><i class="fa-solid fa-gamepad"
                 style="margin-right: 10px;"></i>Gamezone</a></li>
 
@@ -139,6 +141,83 @@
       <p id="date">4th May 2024</p>
       <img id="earth" src="assets/earth2.png" alt="" srcset="">
     </div>
+
+
+
+
+
+
+
+
+
+    <!-- timeout section -->
+
+    <div id="timerwrap">
+
+
+      <!-- shooting stars -->
+
+
+      <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </section>
+
+      <div class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+      </div>
+
+
+      <div id="startin">Starts In</div>
+
+      <div id="timer">
+        <div id="timerbox">
+          <div class="timernumber" id="day">
+            0
+          </div>
+          <div id="timerhead">
+            Days
+          </div>
+        </div>
+        <div id="timerbox">
+          <div class="timernumber" id="hour">
+            0
+          </div>
+          <div id="timerhead">
+            Hours
+          </div>
+        </div>
+        <div id="timerbox">
+          <div class="timernumber" id="min">
+            0
+          </div>
+          <div id="timerhead">
+            Mins
+          </div>
+        </div>
+        <div id="timerbox">
+          <div class="timernumber" id="sec">
+            0
+          </div>
+          <div id="timerhead">
+            Secs
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 
 
@@ -598,7 +677,8 @@
           <div class="tyrocont">
             <div class="tyrophoto">
               <img src="assets/fame1.png" height="200px" class="frame" srcset="">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png" class="tyroimg" alt="" srcset="">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png"
+                class="tyroimg" alt="" srcset="">
 
             </div>
             <div class="tyroname">Divyanshu Chauhan</div>
@@ -825,7 +905,8 @@
           <div id="developercard">
             <div id="imgwrap">
               <img id="lightning" src="assets/6395303-ai.png" alt="">
-              <img id="amit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png" alt="">
+              <img id="amit"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png" alt="">
 
             </div>
             <div id="devname">
@@ -856,25 +937,25 @@
 
 
 
-<!-- ----------------query form     -->
+      <!-- ----------------query form     -->
 
-<div id="queryformwrap">
-  <h1 id="queryh1">QUERIES & FEEDBACK</h1>
-  <div id="queryform">
-      <h2>Query/Feedback</h2>
-      <form action="submit.php" method="post">
-          <label for="name" id="label1">Name</label><br>
-          <input type="text" id="name" name="name" required><br><br>
-          <label for="email">Your Email</label><br>
-          <input type="email" id="email" name="email" required><br><br>
-          <label for="subject">Subject</label><br>
-          <input type="text" id="subject" name="subject" required><br><br>
-          <label for="message">Query</label><br>
-          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-          <input type="submit" value="Submit" name="send">
-      </form>
-  </div>
-</div>
+      <div id="queryformwrap">
+        <h1 id="queryh1">QUERIES & FEEDBACK</h1>
+        <div id="queryform">
+          <h2>Query/Feedback</h2>
+          <form action="submit.php" method="post">
+            <label for="name" id="label1">Name</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Your Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="subject">Subject</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+            <label for="message">Query</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Submit" name="send">
+          </form>
+        </div>
+      </div>
 
 
       <!-- --------FAQ Section  -------------------------- -->
@@ -963,7 +1044,7 @@
 
       <!-- ---------------------Map Section------------------- -->
 
-      
+
 
 
       <div id="mapContainer">

@@ -51,6 +51,7 @@ const tyroh1 = document.getElementById("tyrohead");
 
 const trusth1 = document.getElementById("trusthead");
 //navigationh1
+const startin = document.getElementById("startin");
 
 const navigationh1 = document.getElementById("navigationh1");
 
@@ -91,6 +92,9 @@ maphead.addEventListener("mouseenter", () => {
 
 queryh1.addEventListener("mouseenter", () => {
     randomTextAnimation("QUERIES & FEEDBACK", queryh1)
+});
+startin.addEventListener("mouseenter", () => {
+    randomTextAnimation("STARTS IN", startin)
 });
 
 

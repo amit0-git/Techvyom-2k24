@@ -61,12 +61,18 @@ const devh1 = document.getElementById("developerh1")
 const queryformwrap = document.getElementById("queryformwrap")
 
 
-const faqwrap=document.getElementById("faq")
+const faqwrap = document.getElementById("faq")
 
 const navigationh11 = document.getElementById("navigationh1")
 const navigationsection = document.getElementById("navigation")
 
 const mapcont = document.getElementById("mapContainer")
+
+//timer
+
+
+const startin1 = document.getElementById("startin")
+const timer1 = document.getElementById("timer")
 
 // tyro
 
@@ -135,7 +141,7 @@ function callback(entries) {
         entry.target.classList.add("fade-in")
       }
 
-      
+
       if (entry.target.id == "queryformwrap") {
         entry.target.classList.add("fade-in")
       }
@@ -146,6 +152,15 @@ function callback(entries) {
       if (entry.target.id == "mapContainer") {
         entry.target.classList.add("fade-in")
       }
+
+      if (entry.target.id == "startin") {
+        entry.target.classList.add("fade-in")
+      }
+
+      if (entry.target.id == "timer") {
+        entry.target.classList.add("fade-in")
+      }
+
 
 
 
@@ -193,6 +208,9 @@ window.addEventListener('load', () => {
   observer.observe(faqwrap);
   observer.observe(queryformwrap);
   observer.observe(mapcont);
+  observer.observe(startin1);
+  observer.observe(timer1);
+
 
 
 
@@ -225,19 +243,7 @@ Array.from(gamenav).forEach((element) => {
 
 
 
-// earth,main text,desc animation to load from top
 
-// function loadNav() {
-//   anime({
-//     targets: '#navbar',
-//     top: "10px",
-
-//     easing: 'cubicBezier(0.42, 0, 0.58, 1)',
-//     duration: 1000,
-//     delay: 7000
-//   });
-
-// }
 function loadDate() {
 
   anime({
@@ -321,6 +327,49 @@ else {
 }
 
 
+
+
+// --------------------------------timer section----------------
+// Set the date we're counting down to
+var countDownDate = new Date("May 4, 2024 08:00:00").getTime();
+
+var dayout = document.getElementById("day")
+var hourout = document.getElementById("hour")
+var minout = document.getElementById("min")
+var secout = document.getElementById("sec")
+
+// Update the count down every 1 second
+var x = setInterval(function () {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+  dayout.innerHTML = days;
+  hourout.innerHTML = hours;
+  minout.innerHTML = minutes;
+  secout.innerHTML = seconds;
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    dayout.innerHTML = 0;
+    hourout.innerHTML = 0;
+    minout.innerHTML = 0;
+    secout.innerHTML = 0;
+
+  }
+}, 1000);
 
 
 

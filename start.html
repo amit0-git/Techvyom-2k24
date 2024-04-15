@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+        body {
+            background-color: black;
+
+        }
+
+        #startin {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        #timer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .timernumber {
+            color: white;
+            font-size: 96px;
+            font-family: Josefin Sans, sans-serif;
+            text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+        }
+
+        #timerhead {
+            color: white;
+            font-family: Josefin Sans, sans-serif;
+            font-size: 23px;
+        }
+
+        #timerbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0px 20px 0px 20px;
+
+
+            width: 120px;
+        }
+    </style>
+
+    <div id="timerwrap">
+        <div id="startin">Starts In</div>
+
+        <div id="timer">
+            <div id="timerbox">
+                <div class="timernumber" id="day">
+                    0
+                </div>
+                <div id="timerhead">
+                    Days
+                </div>
+            </div>
+            <div id="timerbox">
+                <div class="timernumber" id="hour">
+                    0
+                </div>
+                <div id="timerhead">
+                    Hours
+                </div>
+            </div>
+            <div id="timerbox">
+                <div class="timernumber" id="min">
+                    0
+                </div>
+                <div id="timerhead">
+                    Mins
+                </div>
+            </div>
+            <div id="timerbox">
+                <div class="timernumber" id="sec">
+                    0
+                </div>
+                <div id="timerhead">
+                    Secs
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 4, 2024 08:00:00").getTime();
+
+        var dayout = document.getElementById("day")
+        var hourout = document.getElementById("hour")
+        var minout = document.getElementById("min")
+        var secout = document.getElementById("sec")
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+            dayout.innerHTML = days;
+            hourout.innerHTML = hours;
+            minout.innerHTML = minutes;
+            secout.innerHTML = seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                dayout.innerHTML = 0;
+                hourout.innerHTML = 0;
+                minout.innerHTML = 0;
+                secout.innerHTML = 0;
+
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

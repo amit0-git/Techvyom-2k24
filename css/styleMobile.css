@@ -339,11 +339,11 @@
         font-weight: 400;
     }
 
-   
 
-   
 
-    
+
+
+
 
     #queryform {
         border: 1px solid var(--border-color);
@@ -352,9 +352,72 @@
         width: 300px;
     }
 
-  
 
+
+    /* -----------------timeout section---------------------- */
+    #timerwrap {
+        position: relative;
+        width: 100vw;
+    }
+
+
+
+    #startin {
+
+        text-align: center;
+        font-size: 40px;
+        color: #a6d3fd;
+        padding-top: 70px;
+
+        font-family: "myfont";
+        padding-bottom: 40px;
+
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: transform 1s, opacity 1s;
+    }
+
+
+
+    #timer {
+   
+        padding-bottom: 70px;
     
+    
+    }
+
+
+
+
+    .timernumber {
+        color: white;
+        font-size: 50px;
+        font-family: Josefin Sans, sans-serif;
+        text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+    }
+
+    #timerhead {
+        color: white;
+        font-family: Josefin Sans, sans-serif;
+        font-size: 15px;
+    }
+
+    #timerbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0px 7px 0px 7px;
+
+        backdrop-filter: blur(10px);
+        width: 120px;
+    }
+
+
+
+
 
 
 }
