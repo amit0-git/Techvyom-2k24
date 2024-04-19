@@ -14,6 +14,7 @@
 12. custom cursor   --not responsive
 
 13. add sign inmail 
+14. optimize site 
 11. add loader   --done
 
 

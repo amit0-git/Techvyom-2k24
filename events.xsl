@@ -113,6 +113,7 @@
 
 
                     <h1 id="eventHH">Events</h1>
+                    <p id="eventsdesc1">Note:-For More Info about any event visit Rulebook.</p>
 
                     <!-- club loop -->
 

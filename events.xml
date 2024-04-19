@@ -13,117 +13,170 @@
             activities.
         </description>
 
-        <background>assets/2555355.jpg</background>
+        <background>events/coding.webp</background>
 
         <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>App Craft Challenge</name>
+            <image>events/app.png</image>
         </event>
 
         <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>DB Hunt</name>
+            <image>events/db hunt.jpg</image>
         </event>
 
         <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Game Jam</name>
+            <image>events/game.png</image>
         </event>
 
         <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Debug Expert</name>
+            <image>events/debug.jpg</image>
         </event>
 
     </club>
 
 
-    <club NAME="Robotics Club">
+    <club NAME="Illuminati Club">
         <description>
             Robotics club is a club of mechanical engineering. This club hosts various
             activities.
         </description>
 
-        <background>assets/2555355.jpg</background>
+        <background>events/illuminati.webp</background>
 
         <event>
-            <name>Robo Race</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Code Quest</name>
+            <image>events/bytebattle.jpg</image>
         </event>
 
         <event>
-            <name>Glider Plane</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Byte Battle</name>
+            <image>events/codequest.webp</image>
         </event>
 
         <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Clone the Web</name>
+            <image>events/cloneweb.avif</image>
         </event>
 
         <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Technical Quiz</name>
+            <image>events/techquiz.jpg</image>
         </event>
 
     </club>
 
-    <club NAME="Robotics Club">
+    <club NAME="Media Relations Club">
         <description>
             Robotics club is a club of mechanical engineering. This club hosts various
             activities.
         </description>
 
-        <background>assets/2555355.jpg</background>
+        <background>events/media.jpg</background>
 
         <event>
-            <name>Robo Race</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Shutter Showcase</name>
+            <image>events/photo.webp</image>
         </event>
 
         <event>
-            <name>Glider Plane</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>CineMagic</name>
+            <image>events/video.avif</image>
         </event>
 
         <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Design Dynamo</name>
+            <image>events/graphic.avif</image>
         </event>
 
-        <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
-        </event>
+     
 
     </club>
-    <club NAME="Robotics Club">
+    <club NAME="Pharmquimica Club">
         <description>
             Robotics club is a club of mechanical engineering. This club hosts various
             activities.
         </description>
 
-        <background>assets/2555355.jpg</background>
+        <background>events/pharmaposter.avif</background>
 
         <event>
-            <name>Robo Race</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Aavishkarak</name>
+            <image>events/aviskar.jpeg</image>
         </event>
 
         <event>
-            <name>Glider Plane</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Pharma Desk</name>
+            <image>events/pharma.webp</image>
         </event>
 
         <event>
+            <name>Pharma Scout</name>
+            <image>events/disease.jpg</image>
+        </event>
+
+        <event>
+            <name>Pharma Draw</name>
+            <image>events/tissue.jpg</image>
+        </event>
+
+     
+
+    </club>
+
+
+
+    <club NAME="Management Club">
+        <description>
+            Robotics club is a club of mechanical engineering. This club hosts various
+            activities.
+        </description>
+
+        <background>events/manage.jpg</background>
+
+        <event>
+            <name>Ad Mad</name>
+            <image>events/admad.webp</image>
+        </event>
+
+        <event>
+            <name>Business Quiz</name>
+            <image>events/businessquiz.webp</image>
+        </event>
+
+        <event>
+            <name>Business Plan</name>
+            <image>events/businessplan.jpg</image>
+        </event>
+
+        <!-- <event>
             <name>C Expert</name>
             <image>assets/digital_enigma_1.png</image>
+        </event> -->
+
+    </club>
+
+    <club NAME="LAN Games">
+        <description>
+            Robotics club is a club of mechanical engineering. This club hosts various
+            activities.
+        </description>
+
+        <background>events/gaming.jpg</background>
+
+        <event>
+            <name>BGMI</name>
+            <image>events/bgmi.jpg</image>
         </event>
 
         <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
+            <name>Mini Militia</name>
+            <image>events/mini.avif</image>
         </event>
+
+    
 
     </club>
 
