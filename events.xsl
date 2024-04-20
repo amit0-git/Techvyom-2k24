@@ -61,6 +61,9 @@
                                 <a href="gallery.html"><i class="fa-solid fa-photo-film"
                                         style="margin-right: 10px;"></i>Gallery</a>
                             </li>
+                            <li><a href="#"><i class="fa-solid fa-calendar-days" style="margin-right: 10px;"></i>Schedule</a>
+                            </li>
+                  
                             <li><a href="#"><i class="fa-regular fa-file" style="margin-right: 10px;"></i>Pre Register</a></li>
                             <li><a href="index.html#queryformwrap"><i class="fa-regular fa-envelope" style="margin-right: 10px;"></i>Contact Us</a></li>
                             <li class="mobilegame"><a href="space-tic-tac.html"><i class="fa-solid fa-gamepad"
@@ -96,6 +99,7 @@
                                 <li>
                                     <a href="gallery.html">Gallery</a>
                                 </li>
+                                <li><a href="#">Schedule</a></li>
                                 <li><a href="#">Pre Register</a></li>
                                 <li><a href="index.html#queryformwrap">Contact Us</a></li>
                                 <li class="gamenav">

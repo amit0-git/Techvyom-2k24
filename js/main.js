@@ -304,6 +304,8 @@ function loadEarth(num, width) {
 
 }
 
+
+
 if (window.innerWidth >= 320 && window.innerWidth <= 480) {
 
   console.log("mobile animation")
@@ -318,6 +320,8 @@ if (window.innerWidth >= 320 && window.innerWidth <= 480) {
 
 
 else {
+
+  //for desktop
   console.log("desktop animation")
   loadEarth("-1100px", "1500px")
   loadDescText("190px")
@@ -325,6 +329,38 @@ else {
   loadDate()
 
 }
+
+
+
+
+
+window.addEventListener('scroll', function () {
+
+  //move earth up when scrolling down
+
+  const earth = document.getElementById('earth');
+  const scrolled = window.scrollY;
+ 
+
+  if (window.scrollY == 0) {
+    //move earth to original position when we reach top of page
+    if (window.innerWidth >= 320 && window.innerWidth <= 480) {
+      loadEarth("-240px", "600px")
+    }
+
+    else {
+
+      loadEarth("-1100px", "1500px")
+    }
+
+  }
+
+
+
+  earth.style.bottom = `${scrolled * 0.5}px`; // Adjust the multiplier for desired parallax effect
+});
+
+
 
 
 
