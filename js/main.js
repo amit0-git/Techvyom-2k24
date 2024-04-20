@@ -1,3 +1,6 @@
+const bg=new Audio("assets/bgaudio.mp3")
+
+
 window.onload = function () {
   // Display the page when page loads
   const webpage = document.getElementById("webpage");
@@ -155,6 +158,10 @@ function callback(entries) {
 
       if (entry.target.id == "startin") {
         entry.target.classList.add("fade-in")
+        
+        bg.currentSrc=0;
+        bg.play();
+        bg.loop=true;
       }
 
       if (entry.target.id == "timer") {
@@ -340,12 +347,13 @@ window.addEventListener('scroll', function () {
 
   const earth = document.getElementById('earth');
   const scrolled = window.scrollY;
- 
+
 
   if (window.scrollY == 0) {
     //move earth to original position when we reach top of page
     if (window.innerWidth >= 320 && window.innerWidth <= 480) {
       loadEarth("-240px", "600px")
+
     }
 
     else {
@@ -356,8 +364,16 @@ window.addEventListener('scroll', function () {
   }
 
 
+  if (window.innerWidth >= 320 && window.innerWidth <= 480) {
+    earth.style.bottom = `${scrolled * 0.7}px`;
+  }
+  else {
+    earth.style.bottom = `${scrolled * 0.5}px`;
+  }
 
-  earth.style.bottom = `${scrolled * 0.5}px`; // Adjust the multiplier for desired parallax effect
+
+
+
 });
 
 
@@ -411,5 +427,5 @@ var x = setInterval(function () {
 
 
 
-
+//smooth scrolling
 

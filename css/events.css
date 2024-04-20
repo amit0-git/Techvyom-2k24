@@ -75,7 +75,8 @@ body {
 }
 
 #equinox-left-desc {
-    font-size: 20px;
+    font-size: 17px;
+    padding-top: 10px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -205,6 +206,7 @@ body {
 
     #equinox-left-desc {
         font-size: 11px;
+        padding-top: 0;
         font-family: "Poppins", sans-serif;
     }
 

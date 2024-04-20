@@ -16,6 +16,47 @@
   align-items: center;
 }
 
+#ufo1{
+  height: 300px;
+  position: absolute;
+  left: 140px;
+  top: 33%;
+  opacity: 0.4;
+}
+
+#ufo2{
+  height: 300px;
+  position: absolute;
+  right: 140px;
+  top: 33%;
+  opacity: 0.4;
+}
+
+.float-ease-in-out {
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(1.5rem);
+
+    -webkit-transform: translateY(1.5rem);
+    
+  }
+
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+   
+  }
+}
+
+
 #developerh1 {
   margin: 0;
   color: #a6d3fd;
@@ -180,6 +221,10 @@
     width: 260px;
 
 
+  }
+
+  #ufo1,#ufo2{
+    display: none;
   }
 
 
