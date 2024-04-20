@@ -9,8 +9,7 @@
 
     <club NAME="Equinox Club">
         <description>
-            Equinox club is a club of computer science and engineering. This club hosts various
-            activities.
+            Equinox Club, is a vibrant community within the Computer Science &amp; Engineering Department, cultivates innovation and skill development among the students. Through workshops, coding competitions, and hackathons, it fosters a passion for technology.
         </description>
 
         <background>events/coding.webp</background>
@@ -40,8 +39,8 @@
 
     <club NAME="Illuminati Club">
         <description>
-            Robotics club is a club of mechanical engineering. This club hosts various
-            activities.
+            Illuminati Club, an enthusiastic community within the IT Department, nurturing innovation and empowering skill development of students in IT field through coding competition, workshops , code golf, hackathons, project talks and quizzes. 
+     
         </description>
 
         <background>events/illuminati.webp</background>
@@ -70,8 +69,7 @@
 
     <club NAME="Media Relations Club">
         <description>
-            Robotics club is a club of mechanical engineering. This club hosts various
-            activities.
+            Media Relations Club , specializes in gathering, curating, and disseminating information to its audience, also students hone their communication skills, and learns to engage with various forms of media with a dedicated team of students.
         </description>
 
         <background>events/media.jpg</background>
@@ -91,13 +89,71 @@
             <image>events/graphic.avif</image>
         </event>
 
-     
 
     </club>
+
+    <club NAME="Design Club">
+        <description>
+            The Design club ignites passion for creativity, fostering a supportive environment for members to explore diverse mediums, share inspiration, and collaborate, enriching the artistic community through expression and innovation.
+        </description>
+
+        <background>events/design.jpg</background>
+
+        <event>
+            <name>Doodle Art</name>
+            <image>events/doodle.webp</image>
+        </event>
+
+        <event>
+            <name>Technical Painting</name>
+            <image>events/technical.jpeg</image>
+        </event>
+
+        <event>
+            <name>Quill the Techvyom</name>
+            <image>events/quill.webp</image>
+        </event>
+
+        <event>
+            <name>Digital Poster Making</name>
+            <image>events/digita.jpeg</image>
+        </event>
+
+    </club>
+
+    <club NAME="Literary Club">
+        <description>
+            The Literary Club is comprised of a passionate group of individuals dedicated to fostering a love for literature through engaging discussions, and captivating events. We delve into literature through discussions, writing challenges, and events, nurturing a love for reading and storytelling.
+        </description>
+
+        <background>events/literature.webp</background>
+
+        <event>
+            <name>Book Cover Designing</name>
+            <image>events/bookdesign.jpeg</image>
+        </event>
+
+        <event>
+            <name>Extempore</name>
+            <image>events/extempore.jpeg</image>
+        </event>
+
+        <event>
+            <name>Verses of the Valley</name>
+            <image>events/verses.jpg</image>
+        </event>
+
+        <event>
+            <name>Treasure Hunt</name>
+            <image>events/treasure.jpg</image>
+        </event>
+
+
+    </club>
+
     <club NAME="Pharmquimica Club">
         <description>
-            Robotics club is a club of mechanical engineering. This club hosts various
-            activities.
+            The pharmacy club offers a collaborative environment for students and professionals to exchange knowledge, advance skills, and promote health education, ensuring excellence and innovation in pharmaceutical practice.
         </description>
 
         <background>events/pharmaposter.avif</background>
@@ -122,16 +178,13 @@
             <image>events/tissue.jpg</image>
         </event>
 
-     
 
     </club>
 
 
-
     <club NAME="Management Club">
         <description>
-            Robotics club is a club of mechanical engineering. This club hosts various
-            activities.
+            The management club provides a vibrant platform for members to enhance leadership skills, cultivate professional networks, and drive innovation, fostering growth and excellence within the industry.
         </description>
 
         <background>events/manage.jpg</background>
@@ -151,17 +204,104 @@
             <image>events/businessplan.jpg</image>
         </event>
 
-        <!-- <event>
-            <name>C Expert</name>
-            <image>assets/digital_enigma_1.png</image>
-        </event> -->
+    
+
+    </club>
+
+    <club NAME="Robotrax Club">
+        <description>
+            The Robotrax Club unites enthusiasts in robotics, AI, and automation, providing a space for collaboration, knowledge sharing, and hands-on projects, fostering innovation and advancing technology in the field
+        </description>
+
+        <background>events/robo.webp</background>
+
+        <event>
+            <name>Line Following Robot</name>
+            <image>events/lfr.jpeg</image>
+        </event>
+
+        <event>
+            <name>Car Race</name>
+            <image>events/carrace.jpg</image>
+        </event>
+
+        <event>
+            <name>Robo War</name>
+            <image>events/robowar.jpg</image>
+        </event>
+
+        <event>
+            <name>Robo Soccer</name>
+            <image>events/robosoccer.jpeg</image>
+        </event>
+
+
+    </club>
+
+
+    <club NAME="Aeronautics Club">
+        <description>
+            Aeronautics Club,a dynamic force within the Mechanical Department, ignites student's passion for flight.Through workshops, design challenges, and competitions, it bridges the gap between classroom theory and real-world applications.
+        </description>
+
+        <background>events/aero.jpg</background>
+
+        <event>
+            <name>Catapult</name>
+            <image>events/catapult.jpeg</image>
+        </event>
+
+        <event>
+            <name>Glider Plane</name>
+            <image>events/glider.jpg</image>
+        </event>
+
+        <event>
+            <name>Bridge Building</name>
+            <image>events/bridge.jpg</image>
+        </event>
+
+        <event>
+            <name>Assemble-Dissemble</name>
+            <image>events/assemble.jpg</image>
+        </event>
+
+
+    </club>
+
+    <club NAME="Synergy Club">
+        <description>
+            The Synergy club ignites passion for technology, fostering knowledge exchange, hands-on experimentation, and innovation in electronic design, empowering members to drive advancements and shape the future of electronics
+        </description>
+
+        <background>events/synergy.jpg</background>
+
+        <event>
+            <name>Junk Wars</name>
+            <image>events/junk.jpeg</image>
+        </event>
+
+        <event>
+            <name>Drone Race</name>
+            <image>events/drone.avif</image>
+        </event>
+
+        <event>
+            <name>Aqua Race</name>
+            <image>events/aqua.jpeg</image>
+        </event>
+
+        <event>
+            <name>Drag &amp; Place</name>
+            <image>events/drag.webp</image>
+        </event>
+
 
     </club>
 
     <club NAME="LAN Games">
         <description>
-            Robotics club is a club of mechanical engineering. This club hosts various
-            activities.
+            LAN games provide immersive, social experiences for gamers, promoting camaraderie, competition, and skill development in a vibrant community atmosphere, enhancing teamwork and strategic thinking among participants.
         </description>
 
         <background>events/gaming.jpg</background>
@@ -176,7 +316,26 @@
             <image>events/mini.avif</image>
         </event>
 
-    
+
+    </club>
+
+    <club NAME="Open Events">
+        <description>
+          These events are innovative events oragnised by TYRO Club.
+        </description>
+
+        <background>events/open.avif</background>
+
+        <event>
+            <name>PLC Design</name>
+            <image>events/bgmi.jpg</image>
+        </event>
+
+        <event>
+            <name>Car Drift</name>
+            <image>events/mini.avif</image>
+        </event>
+
 
     </club>
 

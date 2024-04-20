@@ -168,7 +168,7 @@ body {
         color: white;
         font-size: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 3fr 2fr;
         border: 1px solid rgb(75, 239, 248);
 
         height: 250px;
@@ -197,14 +197,14 @@ body {
    
 
     #equinox-left-head {
-        font-size: 30px;
+        font-size: 23px;
         font-family: "Poppins", sans-serif;
         color: rgb(27, 148, 102);
         font-weight: bold;
     }
 
     #equinox-left-desc {
-        font-size: 12px;
+        font-size: 11px;
         font-family: "Poppins", sans-serif;
     }
 
