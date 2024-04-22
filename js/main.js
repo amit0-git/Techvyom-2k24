@@ -368,7 +368,7 @@ window.addEventListener('scroll', function () {
     earth.style.bottom = `${scrolled * 0.7}px`;
   }
   else {
-    earth.style.bottom = `${scrolled * 0.5}px`;
+    earth.style.bottom = `${scrolled * 0.3}px`;
   }
 
 
@@ -383,7 +383,7 @@ window.addEventListener('scroll', function () {
 
 // --------------------------------timer section----------------
 // Set the date we're counting down to
-var countDownDate = new Date("May 4, 2024 08:00:00").getTime();
+var countDownDate = new Date("May 11, 2024 08:00:00").getTime();
 
 var dayout = document.getElementById("day")
 var hourout = document.getElementById("hour")

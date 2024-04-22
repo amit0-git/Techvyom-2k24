@@ -46,7 +46,7 @@
                                         style="margin-right: 10px;"></i>Home</a>
                             </li>
                             <li>
-                                <a href="events.html"><i class="fa-solid fa-calendar-days"
+                                <a href="events.xml"><i class="fa-solid fa-calendar-days"
                                         style="margin-right: 10px;"></i>Events</a>
                             </li>
                             <li>
@@ -88,7 +88,7 @@
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li>
-                                    <a href="events.html">Events</a>
+                                    <a href="events.xml">Events</a>
                                 </li>
                                 <li>
                                     <a href="hackathon.html">Hackathon</a>

@@ -92,7 +92,7 @@
 
     </club>
 
-    <club NAME="Design Club">
+    <!-- <club NAME="Design Club">
         <description>
             The Design club ignites passion for creativity, fostering a supportive environment for members to explore diverse mediums, share inspiration, and collaborate, enriching the artistic community through expression and innovation.
         </description>
@@ -119,7 +119,7 @@
             <image>events/digita.jpeg</image>
         </event>
 
-    </club>
+    </club> -->
 
     <club NAME="Literary Club">
         <description>
