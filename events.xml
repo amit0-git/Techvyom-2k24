@@ -204,6 +204,10 @@
             <image>events/businessplan.jpg</image>
         </event>
 
+        <event>
+            <name>Sudoku Challenge</name>
+            <image>events/sudoku.jpeg</image>
+        </event>
     
 
     </club>
@@ -220,10 +224,7 @@
             <image>events/lfr.jpeg</image>
         </event>
 
-        <event>
-            <name>Car Race</name>
-            <image>events/carrace.jpg</image>
-        </event>
+      
 
         <event>
             <name>Robo War</name>
@@ -251,10 +252,10 @@
             <image>events/catapult.jpeg</image>
         </event>
 
-        <event>
+        <!-- <event>
             <name>Glider Plane</name>
             <image>events/glider.jpg</image>
-        </event>
+        </event> -->
 
         <event>
             <name>Bridge Building</name>
@@ -327,15 +328,25 @@
         <background>events/open.avif</background>
 
         <event>
-            <name>PLC Design</name>
-            <image>events/bgmi.jpg</image>
+            <name>Asphalt (Car Race)</name>
+            <image>events/carrace.jpg</image>
         </event>
 
         <event>
-            <name>Car Drift</name>
-            <image>events/mini.avif</image>
+            <name>Tech Gallery</name>
+            <image>events/gallery.jpg</image>
         </event>
 
+        <event>
+            <name>PLC Designing</name>
+            <image>events/plc.jpg</image>
+        </event>
+
+        
+        <event>
+            <name>Round the Cube</name>
+            <image>events/cube.jpg</image>
+        </event>
 
     </club>
 
