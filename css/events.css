@@ -5,6 +5,30 @@
     src: url('/font/good-times/goodtimesrg.otf') format('opentype');
 }
 
+/* loader */
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+#webpage {
+    display: none;
+    overflow: hidden;
+}
+
+#loader img {
+    /* border: 1px solid white; */
+    width: 390px;
+
+}
+
 body {
     margin: 0;
     padding: 0;

@@ -12,4 +12,6 @@ add loader to all pages
 add domain
 
 
+college email add
+
 

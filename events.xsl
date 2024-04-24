@@ -2,7 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
-
     <xsl:template match="/collection">
 
 
@@ -12,6 +11,8 @@
                 <meta charset="UTF-8"></meta>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Events</title>
+
+                <meta name="robots" content="index, follow"></meta>
                 <link rel="icon" type="image/png" href="assets/artificial-intelligence.png" />
                 <!-- fontawesome icon cdn -->
                 <script src="https://kit.fontawesome.com/04fd96b6f4.js" crossorigin="anonymous"></script>
@@ -25,221 +26,265 @@
             </head>
 
             <body>
-                <div id="eventsContainer">
+
+                <div id="loader">
+                    <img src="assets//BHW_Binary_Black_Holes_Accretion_Disk (2).gif" alt="" />
+
+                </div>
+
+                <div id="webpage">
+
+                    <div id="eventsContainer">
 
 
-                    <div class="wrapper">
-                        <div id="stars"></div>
-                        <div id="stars2"></div>
-                        <div id="stars3"></div>
+                        <div class="wrapper">
+                            <div id="stars"></div>
+                            <div id="stars2"></div>
+                            <div id="stars3"></div>
 
-                    </div>
+                        </div>
 
-                    <!--Nav
+                        <!--Nav
                     bar -->
 
 
-                    <div id="mobilenavbar">
-                        <ul>
-                            <li>
-                                <a href="index.html"><i class="fa-solid fa-house"
-                                        style="margin-right: 10px;"></i>Home</a>
-                            </li>
-                            <li>
-                                <a href="events.xml"><i class="fa-solid fa-calendar-days"
-                                        style="margin-right: 10px;"></i>Events</a>
-                            </li>
-                            <li>
-                                <a href="hackathon.html"><i class="fa-solid fa-flag-checkered"
-                                        style="margin-right: 10px;"></i>Hackathon</a>
-                            </li>
-                            <li>
-                                <a href="rulebook.html"><i class="fa-solid fa-scale-balanced"
-                                        style="margin-right: 10px;"></i>Rulebook</a>
-                            </li>
-                            <li>
-                                <a href="gallery.html"><i class="fa-solid fa-photo-film"
-                                        style="margin-right: 10px;"></i>Gallery</a>
-                            </li>
-                            <li><a href="#"><i class="fa-solid fa-calendar-days" style="margin-right: 10px;"></i>Schedule</a>
-                            </li>
-                  
-                            <li><a href="#"><i class="fa-regular fa-file" style="margin-right: 10px;"></i>Pre Register</a></li>
-                            <li><a href="index.html#queryformwrap"><i class="fa-regular fa-envelope" style="margin-right: 10px;"></i>Contact Us</a></li>
-                            <li class="mobilegame"><a href="space-tic-tac.html"><i class="fa-solid fa-gamepad"
-                                style="margin-right: 10px;"></i>Gamezone</a></li>
-                            <li class="gamenav">
-                                <a href="game.html"><i class="fa-solid fa-gamepad"
-                                        style="margin-right: 10px;"></i>Gamezone</a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-
-
-                    <div id="navbar" style="left: 50%; transform: translateX(-50%);">
-                        <div id="navbar-left">
-                            <img src="assets/SRMSIMS-logo.png" alt="" srcset="" />
-                        </div>
-                        <div id="navbar-right">
+                        <div id="mobilenavbar">
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.html"><i class="fa-solid fa-house"
+                                            style="margin-right: 10px;"></i>Home</a>
                                 </li>
                                 <li>
-                                    <a href="events.xml">Events</a>
+                                    <a href="events.xml"><i class="fa-solid fa-calendar-days"
+                                            style="margin-right: 10px;"></i>Events</a>
                                 </li>
                                 <li>
-                                    <a href="hackathon.html">Hackathon</a>
+                                    <a href="hackathon.html"><i class="fa-solid fa-flag-checkered"
+                                            style="margin-right: 10px;"></i>Hackathon</a>
                                 </li>
                                 <li>
-                                    <a href="rulebook.html">Rulebook</a>
+                                    <a href="rulebook.html"><i class="fa-solid fa-scale-balanced"
+                                            style="margin-right: 10px;"></i>Rulebook</a>
                                 </li>
                                 <li>
-                                    <a href="gallery.html">Gallery</a>
+                                    <a href="gallery.html"><i class="fa-solid fa-photo-film"
+                                            style="margin-right: 10px;"></i>Gallery</a>
                                 </li>
-                                <li><a href="#">Schedule</a></li>
-                                <li><a href="#">Pre Register</a></li>
-                                <li><a href="index.html#queryformwrap">Contact Us</a></li>
+                                <li>
+                                    <a href="schedule.html"><i class="fa-solid fa-calendar-days"
+                                            style="margin-right: 10px;"></i>Schedule</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><i class="fa-regular fa-file"
+                                            style="margin-right: 10px;"></i>Pre Register</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#queryformwrap"><i
+                                            class="fa-regular fa-envelope"
+                                            style="margin-right: 10px;"></i>Contact Us</a>
+                                </li>
+                                <li class="mobilegame">
+                                    <a href="space-tic-tac.html"><i class="fa-solid fa-gamepad"
+                                            style="margin-right: 10px;"></i>Gamezone</a>
+                                </li>
                                 <li class="gamenav">
-                                    <a href="game.html">Gamezone</a>
+                                    <a href="game.html"><i class="fa-solid fa-gamepad"
+                                            style="margin-right: 10px;"></i>Gamezone</a>
                                 </li>
-                                <li id="navicon">
-                                    <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                                        <i class="fa fa-bars"></i>
-                                    </a>
-                                </li>
+
 
                             </ul>
                         </div>
-                    </div>
 
 
-                    <h1 id="eventHH">Events</h1>
-                    <p id="eventsdesc1">Note:-For More Info about any event visit Rulebook.</p>
+                        <div id="navbar" style="left: 50%; transform: translateX(-50%);">
+                            <div id="navbar-left">
+                                <img src="assets/SRMSIMS-logo.png" alt="" srcset="" />
+                            </div>
+                            <div id="navbar-right">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="events.xml">Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="hackathon.html">Hackathon</a>
+                                    </li>
+                                    <li>
+                                        <a href="rulebook.html">Rulebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="schedule.html">Schedule</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pre Register</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#queryformwrap">Contact Us</a>
+                                    </li>
+                                    <li class="gamenav">
+                                        <a href="game.html">Gamezone</a>
+                                    </li>
+                                    <li id="navicon">
+                                        <a href="javascript:void(0);" class="icon"
+                                            onclick="mobileNav()">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </li>
 
-                    <!-- club loop -->
+                                </ul>
+                            </div>
+                        </div>
 
-                    <xsl:for-each select="club">
 
-                        <!-- club wrapper -->
+                        <h1 id="eventHH">Events</h1>
+                        <p id="eventsdesc1">Note:-For More Info about any event visit Rulebook.</p>
+
+                        <!-- club loop -->
+
+                        <xsl:for-each select="club">
+
+                            <!-- club wrapper -->
                         <div id="equinox">
 
-                            <div id="equinox-left">
-                                <div id="equinox-left-head">
-                                    <xsl:value-of select="@NAME" />
+                                <div id="equinox-left">
+                                    <div id="equinox-left-head">
+                                        <xsl:value-of select="@NAME" />
+                                    </div>
+
+                                    <div id="equinox-left-desc">
+                                        <xsl:value-of select="description" />
+                                    </div>
                                 </div>
 
-                                <div id="equinox-left-desc">
-                                    <xsl:value-of select="description" />
+                                <div id="equinox-right"
+                                    style="background-image: url('{background}');">
+
                                 </div>
-                            </div>
-
-                            <div id="equinox-right" style="background-image: url('{background}');">
 
                             </div>
-
-                        </div>
 
                         
 
 
                         <div
-                            id="equinoxevents">
+                                id="equinoxevents">
 
-                            <!-- loop club events -->
-                            <xsl:for-each select="event">
+                                <!-- loop club events -->
+                                <xsl:for-each select="event">
 
-                                <div id="eventwrapper">
-                                    <div id="eventbox">
-                                        <img src="assets/frameup.svg" id="frameup" alt="" srcset="" />
-                                        <img src="{image}" alt="" srcset=""
-                                            id="poster" />
-                                        <img src="assets/framedown.svg" id="framedown" alt=""
-                                            srcset="" />
+                                    <div id="eventwrapper">
+                                        <div id="eventbox">
+                                            <img src="assets/frameup.svg" id="frameup" alt=""
+                                                srcset="" />
+                                            <img src="{image}" alt="" srcset=""
+                                                id="poster" />
+                                            <img src="assets/framedown.svg" id="framedown" alt=""
+                                                srcset="" />
 
+                                        </div>
+                                        <div id="eventname">
+                                            <xsl:value-of select="name" />
+                                        </div>
                                     </div>
-                                    <div id="eventname">
-                                        <xsl:value-of select="name" />
-                                    </div>
+
+
+                                </xsl:for-each>
+
+                            </div>
+
+
+                        </xsl:for-each>
+
+
+                    </div>
+
+
+                    <!-- footer -->
+
+                    <div id="footer">
+
+                        <div id="footer-left">
+                            <div id="footer-left-up">
+                                <img src="assets/SRMS Logo.png" id="footer-srms" alt="" />
+                            </div>
+                            <div id="footer-left-down">
+                                <div id="footer-left-down-head">
+                                    Follow Us
                                 </div>
 
+                                <div id="footer-left-down-icons">
 
-                            </xsl:for-each>
+                                    <a href="https://twitter.com/SRMSCETBareilly" target="_blank">
+                                        <i class="fa-brands fa-x-twitter" style="color: white;"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/srmscetbly" target="_blank">
+                                        <i class="fa-brands fa-facebook-f" style="color: white;"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/srmstrust" target="_blank">
+                                        <i class="fa-brands fa-youtube" style="color: white;"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/school/srms-institutions/"
+                                        target="_blank">
+                                        <i class="fa-brands fa-linkedin" style="color: white;"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/srmstrust/" target="_blank">
+                                        <i class="fa-brands fa-instagram" style="color: white;"></i>
+                                    </a>
 
-                        </div>
-
-
-                    </xsl:for-each>
-
-
-                </div>
-
-
-                <!-- footer -->
-
-                <div id="footer">
-
-                    <div id="footer-left">
-                        <div id="footer-left-up">
-                            <img src="assets/SRMS Logo.png" id="footer-srms" alt="" />
-                        </div>
-                        <div id="footer-left-down">
-                            <div id="footer-left-down-head">
-                                Follow Us
-                            </div>
-
-                            <div id="footer-left-down-icons">
-
-                                <a href="https://twitter.com/SRMSCETBareilly" target="_blank">
-                                    <i class="fa-brands fa-x-twitter" style="color: white;"></i>
-                                </a>
-                                <a href="https://www.facebook.com/srmscetbly" target="_blank">
-                                    <i class="fa-brands fa-facebook-f" style="color: white;"></i>
-                                </a>
-                                <a href="https://www.youtube.com/srmstrust" target="_blank">
-                                    <i class="fa-brands fa-youtube" style="color: white;"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/school/srms-institutions/"
-                                    target="_blank">
-                                    <i class="fa-brands fa-linkedin" style="color: white;"></i>
-                                </a>
-                                <a href="https://www.instagram.com/srmstrust/" target="_blank">
-                                    <i class="fa-brands fa-instagram" style="color: white;"></i>
-                                </a>
-
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="footer-right">
+                        <div id="footer-right">
 
-                        <div id="footer-right-head">
-                            SHRI RAM MURTI SMARAK COLLEGE OF ENGINEERING AND TECHNOLOGY
-                        </div>
+                            <div id="footer-right-head">
+                                SHRI RAM MURTI SMARAK COLLEGE OF ENGINEERING AND TECHNOLOGY
+                            </div>
 
-                        <div id="footer-right-address">
-                            <i class="fa-solid fa-location-dot"
-                                style="color: white;margin-right: 10px;"></i> Ram Murti Puram 13KM
-        Nainital-Highway,Bareilly-243202 </div>
+                            <div id="footer-right-address">
+                                <i class="fa-solid fa-location-dot"
+                                    style="color: white;margin-right: 10px;"></i> Ram Murti Puram
+        13KM Nainital-Highway,Bareilly-243202 </div>
 
-                        <div id="footer-right-phone">
-                            <i class="fa-solid fa-phone" style="color:white;margin-right:10px"></i>
+                            <div id="footer-right-phone">
+                                <i class="fa-solid fa-phone" style="color:white;margin-right:10px"></i>
         Phone:0581-252246,2582249,2582231-32</div>
 
-                        <div id="footer-right-email">
-                            <i class="fa-regular fa-envelope" style="color:white;margin-right:10px"></i>
-        E-mail: <a href="mailto:tyro@srmscet.edu">techvyom.srmscet@gmail.com</a> <i
-                                class="fa-brands fa-internet-explorer"
-                                style="color:white;margin-right:10px;margin-left: 10px;"></i>
+                            <div id="footer-right-email">
+                                <i class="fa-regular fa-envelope"
+                                    style="color:white;margin-right:10px"></i> E-mail: <a
+                                    href="mailto:tyro@srmscet.edu">techvyom.srmscet@gmail.com</a> <i
+                                    class="fa-brands fa-internet-explorer"
+                                    style="color:white;margin-right:10px;margin-left: 10px;"></i>
         Website: <a href="http://www.srms.ac.in" target="_blank">www.srms.ac.in</a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
 
                 <!-- JS Files -->
+
+                <script>
+                    window.onload = function () {
+                    // Display the page when page loads
+                    const webpage = document.getElementById("webpage");
+                    const loader = document.getElementById("loader");
+                    loader.style.display = "none";
+                    webpage.style.display = "block";
+
+
+                    };
+
+                </script>
                 <script src="js/event.js"></script>
 
 
