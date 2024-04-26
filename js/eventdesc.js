@@ -36,7 +36,7 @@ function playAnimation() {
       targets: myObject,
       clg: 100,
       evt: 50,
-      prz: 100000,
+      prz: 50000,
       prt: 10000,
       round: 1,
       easing: 'easeInOutExpo',
