@@ -14,4 +14,5 @@ add domain
 
 college email add
 
-
+https://docs.google.com/forms/d/e/1FAIpQLSdDlgVuyUz0dIb3MB0wAcq8QVrVaVLRsWfrCBd7qL5-HMfQKA/viewform?usp=sf_link
+https://forms.gle/RRmvdc5SVd9upHN78

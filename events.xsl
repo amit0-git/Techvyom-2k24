@@ -76,7 +76,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="#"><i class="fa-regular fa-file"
+                                    <a href="https://forms.gle/RRmvdc5SVd9upHN78"><i class="fa-regular fa-file"
                                             style="margin-right: 10px;"></i>Pre Register</a>
                                 </li>
                                 <li>
@@ -123,7 +123,7 @@
                                         <a href="schedule.html">Schedule</a>
                                     </li>
                                     <li>
-                                        <a href="#">Pre Register</a>
+                                        <a href="https://forms.gle/RRmvdc5SVd9upHN78">Pre Register</a>
                                     </li>
                                     <li>
                                         <a href="index.html#queryformwrap">Contact Us</a>
