@@ -63,7 +63,7 @@
                                             style="margin-right: 10px;"></i>Hackathon</a>
                                 </li>
                                 <li>
-                                    <a href="rulebook.html"><i class="fa-solid fa-scale-balanced"
+                                    <a href="assets/TECHVYOM RULEBOOK.pdf" target="_blank"><i class="fa-solid fa-scale-balanced"
                                             style="margin-right: 10px;"></i>Rulebook</a>
                                 </li>
                                 <li>
@@ -114,7 +114,7 @@
                                         <a href="hackathon.html">Hackathon</a>
                                     </li>
                                     <li>
-                                        <a href="rulebook.html">Rulebook</a>
+                                        <a href="assets/TECHVYOM RULEBOOK.pdf" target="_blank">Rulebook</a>
                                     </li>
                                     <li>
                                         <a href="gallery.html">Gallery</a>
