@@ -8,6 +8,11 @@
     src: url('/font/good-times/goodtimesrg.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'myfont1';
+    src: url('font/sterion-font/Sterion-BLLld.ttf') format('opentype');
+}
+
 
 
 html {
@@ -93,10 +98,11 @@ body {
 
     font-size: 100px;
     margin: 0;
-    color: transparent;
-    -webkit-text-stroke: 1px white;
+    color: white;
+    /* -webkit-text-stroke: 1px white; */
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
+    font-family: 'myfont1';
+    /* font-family: "Poppins", sans-serif; */
 
 
 }
