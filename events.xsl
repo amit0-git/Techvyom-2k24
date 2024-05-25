@@ -58,10 +58,7 @@
                                     <a href="events.xml"><i class="fa-solid fa-calendar-days"
                                             style="margin-right: 10px;"></i>Events</a>
                                 </li>
-                                <li>
-                                    <a href="hackathon.html"><i class="fa-solid fa-flag-checkered"
-                                            style="margin-right: 10px;"></i>Hackathon</a>
-                                </li>
+                             
                                 <li>
                                     <a href="assets/TECHVYOM RULEBOOK.pdf" target="_blank"><i class="fa-solid fa-scale-balanced"
                                             style="margin-right: 10px;"></i>Rulebook</a>
@@ -70,11 +67,7 @@
                                     <a href="gallery.html"><i class="fa-solid fa-photo-film"
                                             style="margin-right: 10px;"></i>Gallery</a>
                                 </li>
-                                <li>
-                                    <a href="schedule.html"><i class="fa-solid fa-calendar-days"
-                                            style="margin-right: 10px;"></i>Schedule</a>
-                                </li>
-
+                             
                                 <li>
                                     <a href="https://forms.gle/RRmvdc5SVd9upHN78"><i class="fa-regular fa-file"
                                             style="margin-right: 10px;"></i>Pre Register</a>
@@ -110,18 +103,14 @@
                                     <li>
                                         <a href="events.xml">Events</a>
                                     </li>
-                                    <li>
-                                        <a href="hackathon.html">Hackathon</a>
-                                    </li>
+                              
                                     <li>
                                         <a href="assets/TECHVYOM RULEBOOK.pdf" target="_blank">Rulebook</a>
                                     </li>
                                     <li>
                                         <a href="gallery.html">Gallery</a>
                                     </li>
-                                    <li>
-                                        <a href="schedule.html">Schedule</a>
-                                    </li>
+                                 
                                     <li>
                                         <a href="https://forms.gle/RRmvdc5SVd9upHN78">Pre Register</a>
                                     </li>

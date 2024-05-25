@@ -9,7 +9,9 @@
 
     <club NAME="Equinox Club">
         <description>
-            Equinox Club, is a vibrant community within the Computer Science &amp; Engineering Department, cultivates innovation and skill development among the students. Through workshops, coding competitions, and hackathons, it fosters a passion for technology.
+            Equinox Club, is a vibrant community within the Computer Science &amp; Engineering 
+            Department, cultivates innovation and skill development among the students. 
+   
         </description>
 
         <background>events/coding.webp</background>
@@ -39,7 +41,7 @@
 
     <club NAME="Illuminati Club">
         <description>
-            Illuminati Club, an enthusiastic community within the IT Department, nurturing innovation and empowering skill development of students in IT field through coding competition, workshops , code golf, hackathons, project talks and quizzes. 
+            Illuminati Club, an enthusiastic community within the IT Department, nurturing innovation and empowering skill development of students in IT field through coding competition, workshops , code golf etc
      
         </description>
 
@@ -69,7 +71,7 @@
 
     <club NAME="Media Relations Club">
         <description>
-            Media Relations Club , specializes in gathering, curating, and disseminating information to its audience, also students hone their communication skills, and learns to engage with various forms of media with a dedicated team of students.
+            Media Relations Club , specializes in gathering, curating, and disseminating information to its audience, also students hone their communication skills, and learns to engage with various forms of media.
         </description>
 
         <background>events/media.jpg</background>
@@ -94,7 +96,9 @@
 
     <!-- <club NAME="Design Club">
         <description>
-            The Design club ignites passion for creativity, fostering a supportive environment for members to explore diverse mediums, share inspiration, and collaborate, enriching the artistic community through expression and innovation.
+            The Design club ignites passion for creativity, fostering a supportive environment for members to
+    explore diverse mediums, share inspiration, and collaborate, enriching the artistic community
+    through expression and innovation.
         </description>
 
         <background>events/design.jpg</background>
@@ -123,7 +127,7 @@
 
     <club NAME="Literary Club">
         <description>
-            The Literary Club is comprised of a passionate group of individuals dedicated to fostering a love for literature through engaging discussions, and captivating events. We delve into literature through discussions, writing challenges, and events, nurturing a love for reading and storytelling.
+            The Literary Club is comprised of a passionate group of individuals dedicated to fostering a love for literature through engaging discussions, and captivating events. We delve into literature through discussions, writing challenges, and events etc
         </description>
 
         <background>events/literature.webp</background>
@@ -148,7 +152,7 @@
             <image>events/treasure.jpg</image>
         </event>
 
-   
+
     </club>
 
     <club NAME="Pharmquimica Club">
@@ -208,7 +212,7 @@
             <name>Billboard</name>
             <image>events/billboard.jpg</image>
         </event>
-    
+
 
     </club>
 
@@ -224,7 +228,6 @@
             <image>events/lfr.jpeg</image>
         </event>
 
-      
 
         <event>
             <name>Robo War</name>
@@ -272,7 +275,7 @@
 
     <club NAME="Synergy Club">
         <description>
-            The Synergy club ignites passion for technology, fostering knowledge exchange, hands-on experimentation, and innovation in electronic design, empowering members to drive advancements and shape the future of electronics
+            The Synergy club ignites passion for technology, fostering knowledge exchange, hands-on experimentation, and innovation in electronic design, empowering members to drive advancements.
         </description>
 
         <background>events/synergy.jpg</background>
@@ -346,7 +349,7 @@
             <name>Speed Cubing</name>
             <image>events/cube.jpg</image>
         </event>
-        
+
 
     </club>
 
